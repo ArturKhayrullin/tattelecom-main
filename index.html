@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Таттелеком - Главная</title>
+	<script src="./libs/jquery.js"></script>
+	<script src="./libs/jquery.bxslider/jquery.bxslider.min.js"></script>
+	<script src="./libs/script.js"></script>
+	<!-- <link href="./libs/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="main-wrapper">
+		<header>
+			<div class="left">
+				<img src="./img/menu-sandwich-desktop.svg" alt="Меню" id="menu-sandwich">
+				<a href="#">УСЛУГИ ДЛЯ ДОМА</a>
+				<a href="#">УСЛУГИ ДЛЯ БИЗНЕСА</a>
+				<a href="#">О КОМПАНИИ</a>
+				<a href="#">ПАРТНЕРАМ</a>
+			</div>
+			<div class="right">
+				<a href="#">СЛУЖБА ПОДДЕРЖКИ</a>
+				<a href="#">ОФИСЫ ПРОДАЖ</a>	
+				<a href="#" class="city-chooser">
+					<img src="./img/city-chooser-icon.svg"  id="city-chooser-icon">
+					<span>КАЗАНЬ</span>
+					<img src="./img/city-chooser-arrow.svg"  id="city-chooser-arrow">
+				</a>
+
+				<a href="#" class="dashboard">
+					<img src="./img/dashboard-icon.svg" id="dashboard-icon">
+					<span>ЛИЧНЫЙ КАБИНЕТ</span>
+				</a>
+				
+				<a href="#" class="connect">
+					<span>ПОДКЛЮЧИТЬСЯ</span>
+				</a>
+			</div>
+		</header>
+
+		<div class="main-page-menu">
+			<div class="left">
+				<img src="./img/logo.png" class="logo">
+			</div>
+
+			<div class="right">
+				<a href="#">Мобильная связь</a>
+				<a href="#">Пакеты услуг</a>
+				<a href="#">Интернет</a>
+				<a href="#">Телевидение</a>
+				<a href="#">Телефония</a>
+				<a href="tel:8 (843) 222-22-22" class="phone">(843) 222-22-22</a>
+			</div>
+		</div>
+
+		<div id="main-slider">
+			<ul class="bxslider">
+			  <li>
+			  	<img src="./img/main-banner-background-1.jpg" />
+			  	<div class="slider-text">
+			  		<h1>Домашний интернет «Таттелеком»</h1>
+			  		<p>Мы — местный оператор, поэтому развиваем сеть не только в крупных городах, но и в отдаленных уголках Республики!</p>
+			  		<a href="#" class="slider-button">
+			  			ПОДРОБНЕЕ О ТАРИФАХ
+			  		</a>
+			  	</div>
+			  </li>
+
+			  <li>
+			  	<img src="./img/main-banner-background-1.jpg" />
+			  	<div class="slider-text">
+			  		<h1>Домашний интернет «Таттелеком»</h1>
+			  		<p>Мы — местный оператор, поэтому развиваем сеть не только в крупных городах, но и в отдаленных уголках Республики!</p>
+			  		<a href="#" class="slider-button">
+			  			ПОДРОБНЕЕ О ТАРИФАХ
+			  		</a>
+			  	</div>
+			  </li>
+			  
+			</ul>
+
+			<div class="control-arrows">
+				<img src="./img/control-arrow.png" class="arrow-left" id="main-slider-prev">
+				<span class="current-slide-number">1</span>
+				<span>/</span>
+				<span class="overall-slides-number">3</span>
+				<img src="./img/control-arrow.png" class="arrow-right" id="main-slider-next">
+			</div>
+		</div>
+
+		<div id="service-actions">
+			<div class="border-wrapper">
+				<div class="service-action">
+					<h3>Пакеты услуг</h3>
+					<p>Доступ в Интернет, телевидение, домашняя телефония и мобильная связь.</p>
+					<a href="#" class="service-connect"><span>Подключиться</span></a>
+				</div>
+				<div class="service-action">
+					<h3>Подключить услуги</h3>
+					<p>Доступ в Интернет, телевидение, домашняя телефония и мобильная связь.</p>
+					<a href="#" class="service-connect"><span>Подключиться</span></a>
+				</div>
+				<div class="service-action">
+					<h3>Оплатить услуги</h3>
+					<p>Банковской картой, по номеру мобильного, домашнего, лицевого счета</p>
+					<a href="#" class="service-connect"><span>Подключиться</span></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="services-for-home">
+			<div class="header">
+				<h2>Услуги для дома</h2>
+				<div class="slider-controls">
+					<a href="#">СМОТРЕТЬ ВСЕ УСЛУГИ</a>
+					<div>
+						<img src="./img/control-arrow.png" class="arrow-left" id="services-for-home-slider-prev">
+						<span class="services-for-home-current-slide-number">1</span>
+						<span>/</span>
+						<span class="services-for-home-overall-slides-number">3</span>
+						<img src="./img/control-arrow.png" class="arrow-right" id="services-for-home-slider-next">
+					</div>
+				</div>
+			</div>
+
+			<div class="services-for-home-slider">
+				<ul>
+					<li>
+						<div class="services-container">
+							<div class="services-for-home-service">
+								<img src="./img/services-for-home-service1.jpg">
+								<h4>4G Интернет</h4>
+								<h6>от 6 руб./месяц</h6>
+								<p>Безлимитный 4G интернет по РТ. 300 минут на номера РФ и РТ </p>
+								<div class="button-centerer">
+									<a href="#" class="services-for-home-button">ПОДКЛЮЧИТЬСЯ</a>
+								</div>
+							</div>
+							<div class="services-for-home-service">
+								<img src="./img/services-for-home-service1.jpg">
+								<h4>4G Интернет</h4>
+								<h6>от 6 руб./месяц</h6>
+								<p>Безлимитный 4G интернет по РТ. 300 минут на номера РФ и РТ </p>
+								<div class="button-centerer">
+									<a href="#" class="services-for-home-button">ПОДКЛЮЧИТЬСЯ</a>
+								</div>
+							</div>
+							<div class="services-for-home-service">
+								<img src="./img/services-for-home-service1.jpg">
+								<h4>4G Интернет</h4>
+								<h6>от 6 руб./месяц</h6>
+								<p>Безлимитный 4G интернет по РТ. 300 минут на номера РФ и РТ </p>
+								<div class="button-centerer">
+									<a href="#" class="services-for-home-button">ПОДКЛЮЧИТЬСЯ</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="services-container">
+							<div class="services-for-home-service">
+								<img src="./img/services-for-home-service1.jpg">
+								<h4>4G Интернет</h4>
+								<h6>от 6 руб./месяц</h6>
+								<p>Безлимитный 4G интернет по РТ. 300 минут на номера РФ и РТ </p>
+								<div class="button-centerer">
+									<a href="#" class="services-for-home-button">ПОДКЛЮЧИТЬСЯ</a>
+								</div>
+							</div>
+							<div class="services-for-home-service">
+								<img src="./img/services-for-home-service1.jpg">
+								<h4>4G Интернет</h4>
+								<h6>от 6 руб./месяц</h6>
+								<p>Безлимитный 4G интернет по РТ. 300 минут на номера РФ и РТ </p>
+								<div class="button-centerer">
+									<a href="#" class="services-for-home-button">ПОДКЛЮЧИТЬСЯ</a>
+								</div>
+							</div>
+							<div class="services-for-home-service">
+								<img src="./img/services-for-home-service1.jpg">
+								<h4>4G Интернет</h4>
+								<h6>от 6 руб./месяц</h6>
+								<p>Безлимитный 4G интернет по РТ. 300 минут на номера РФ и РТ </p>
+								<div class="button-centerer">
+									<a href="#" class="services-for-home-button">ПОДКЛЮЧИТЬСЯ</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="special-offers">
+			<img src="./img/special-offers-image.jpg">
+			<div class="content">
+				<div class="left">
+					<h4>Специальные предложения и акции</h4>
+					<p>Действующие и архивные  предложения для абонентов Таттелеком и Летай </p>
+					<a href="#" class="button">СМОТРЕТЬ ВСЕ АКЦИИ</a>
+				</div>
+
+				<div class="right">
+					<ul>
+						<li>
+							<div>
+								<h4>Выбери свой красивый номер мобильной связи «Летай»</h4>
+								<p>Для абонентов местной телефонной связи с абонентским тарифным планом звонки на мобильные телефоны "Летай" - 0 рублей. С повременным тарифном планом - 68 копеек. </p>
+
+								<a href="#" class="button">СМОТРЕТЬ УСЛОВИЯ АКЦИИ</a>
+							</div>
+
+							<div class="special-offers-slider-controls">
+								<img src="./img/control-arrow.png" class="arrow-left special-offers-slider-prev" id="special-offers-slider-prev">
+								<span class="special-offers-current-slide-number">1</span>
+								<span>/</span>
+								<span class="special-offers-overall-slides-number">3</span>
+								<img src="./img/control-arrow.png" class="arrow-right special-offers-slider-next" id="special-offers-slider-next">
+							</div>
+
+						</li>
+
+						<li>
+							<div>
+								<h4>Выбери свой красивый номер мобильной связи «Летай»</h4>
+								<p>Для абонентов местной телефонной связи с абонентским тарифным планом звонки на мобильные телефоны "Летай" - 0 рублей. С повременным тарифном планом - 68 копеек. </p>
+
+								<a href="#" class="button">СМОТРЕТЬ УСЛОВИЯ АКЦИИ</a>
+							</div>
+
+							<div class="special-offers-slider-controls">
+								<img src="./img/control-arrow.png" class="arrow-left special-offers-slider-prev" id="special-offers-slider-prev">
+								<span class="special-offers-current-slide-number">1</span>
+								<span>/</span>
+								<span class="special-offers-overall-slides-number">3</span>
+								<img src="./img/control-arrow.png" class="arrow-right special-offers-slider-next" id="special-offers-slider-next">
+							</div>
+
+						</li>
+					</ul>
+
+
+				</div>
+			</div>
+		</div>
+
+		<div id="news">
+			<h2>Новости компании</h2>
+			<div class="news-container">
+				<div class="news-item">
+					<div class="date">
+						<div class="day">26</div>
+						<div class="month">мая</div>
+					</div>
+
+					<div class="image">
+						<img src="./img/news-image.jpg">
+					</div>
+
+					<div class="details">
+						<h4>В Альметьевске открылся новый офис продаж и обслуживания Таттелеком и мобильной связи Летай</h4>
+						<p>25 мая в г. Альметьевске по адресу ул. Шевченко, 47 открылся новый офис продаж и обслуживания Таттелеком и мобильной связи Летай.</p>
+						<a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+					</div>
+
+				</div>
+				<div class="news-item">
+					<div class="date">
+						<div class="day">26</div>
+						<div class="month">мая</div>
+					</div>
+
+					<div class="image">
+						<img src="./img/news-image.jpg">
+					</div>
+
+					<div class="details">
+						<h4>В Альметьевске открылся новый офис продаж и обслуживания Таттелеком и мобильной связи Летай</h4>
+						<p>25 мая в г. Альметьевске по адресу ул. Шевченко, 47 открылся новый офис продаж и обслуживания Таттелеком и мобильной связи Летай.</p>
+						<a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="button-centerer">
+				<a href="#">СМОТРЕТЬ ВСЕ НОВОСТИ</a>
+			</div>
+		</div>
+
+		<footer>
+			<div class="age">
+				12+
+			</div>
+
+			<div class="footer-links">
+				<div>
+					<a href="#">Лицензии</a>
+					<a href="#">Документы</a>
+					<a href="#">Инструкции</a>
+					<a href="#">Обратная связь</a>
+				</div>
+
+				<div>
+					<a href="#">Акции</a>
+					<a href="#">Вопросы и ответы</a>
+					<a href="#">Служба поддержки</a>
+					<a href="#">Офисы продаж</a>
+				</div>
+				<div>
+					<a href="#">Услуги для дома</a>
+					<a href="#">Услуги для бизнеса</a>
+					<a href="#">О компании</a>
+					<a href="#">Партнерам</a>
+				</div>
+				<div class="socials">
+					<div>Мы в социальных сетях:</div>
+					<a href="#"><img src="img/socials/vk.png"></a>
+					<a href="#"><img src="img/socials/instagram.png"></a>
+					<a href="#"><img src="img/socials/facebook.png"></a>
+					<a href="#"><img src="img/socials/ok.png"></a>
+					<a href="#"><img src="img/socials/youtube.png"></a>
+				</div>
+				<div class="contact-center">
+					<div>Контакт-центр:</div>
+					<div class="number">(843) 222-22-22</div>
+				</div>
+			</div>
+
+			<div class="very-footer">
+				<div class="left">
+					<span>© <script>document.write((new Date()).getFullYear())</script> ПАО «Таттелеком»</span>
+					<a href="#">Использование материалов сайта</a>
+					<span>Сайт является СМИ. Эл №ФС77-66502 от 14.07.2016</span>
+				</div>
+
+				<div class="right">
+					<span>Сделано в Hoso Bureau</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

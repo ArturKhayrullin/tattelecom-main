@@ -22,6 +22,28 @@ $(document).ready(function() {
 	  return false;
 	});
 
+	mobileSlider=$('#main-slider-mobile ul').bxSlider({
+		onSlideAfter: function($slideElement, oldIndex, newIndex){
+	    // do mind-blowing JS stuff here
+	    $('.mobile-current-slide-number').html(mobileSlider.getCurrentSlide()+1);
+	  }
+	});
+
+	var mobileSliderCount = mobileSlider.getSlideCount();
+	$(".mobile-overall-slides-number").html(mainSliderCount);
+
+	$('#mobile-main-slider-next').click(function(){
+	  mobileSlider.goToNextSlide();
+	  return false;
+	});
+
+	$('#mobile-main-slider-prev').click(function(){
+	  mobileSlider.goToPrevSlide();
+	  return false;
+	});
+
+
+
 
 	/*SERVICES FOR HOME SLIDER*/
 

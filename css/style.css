@@ -39,6 +39,7 @@ a {
 	border:none;
 	-webkit-box-shadow:none;
 	        box-shadow:none;
+	height:100%;
 }
 
 .bx-controls {
@@ -952,6 +953,7 @@ footer .very-footer > div.right {
 #plans-and-packets .actions .action .detail img {
 	float:left;
 	margin-right:1.97900vw;
+	width:3.49000vw;
 }
 
 #plans-and-packets .actions .action .detail p {
@@ -1037,12 +1039,60 @@ footer .very-footer > div.right {
 
 #special-offers.home-internet-special-offers .content {
 	margin-top:0;
+	height:21.87500vw;
+}
+
+#special-offers.home-internet-special-offers .content > div {
+	padding:2.03100vw 2.65600vw;
 }
 
 #special-offers.home-internet-special-offers h2 {
     font-size: 2.29200vw;
     margin-bottom: 2.5vw;
     padding:0% 6%;
+}
+
+#special-offers.home-internet-special-offers .content h4 {
+	font-size:1.97900vw;
+	font-family:'Gilroy Medium';
+	line-height:1.21053;
+	letter-spacing:0em;
+}
+
+#special-offers.home-internet-special-offers .content p {
+	font-size:1.14600vw;
+	line-height:1.54545;
+	letter-spacing:0.01500em;
+}
+
+#special-offers.home-internet-special-offers .content .left {
+	background:url(../img/home-internet/special-offers-left-bg.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	position:relative;
+}
+
+#special-offers.home-internet-special-offers .content .right {
+	background:url(../img/home-internet/special-offers-right-bg.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	color:#ffffff;
+	
+}
+
+#special-offers.home-internet-special-offers .content .right li > div {
+	position:relative;
+}
+
+#special-offers.home-internet-special-offers .content .right a.button {
+	top:initial;
+	display:none;
+}
+
+#special-offers.home-internet-special-offers .content a.button {
+	position:absolute;
+	bottom:6%;
+	left:2.65600vw;
 }
 
 #how-to-connect {
@@ -1085,11 +1135,6 @@ footer .very-footer > div.right {
 	width:25.00000%;
 }
 
-#how-to-connect .content .request-connection:before {
-	display:block;
-	content:'';
-	clear:both;
-}
 
 #how-to-connect .content .request-connection {
 	display:flex;
@@ -1102,6 +1147,7 @@ footer .very-footer > div.right {
 	font-family:'Gilroy SemiBold';
 	font-size:0.93800vw;
 	letter-spacing:0.05em;
+	clear:both;
 
 }
 
@@ -2571,4 +2617,269 @@ footer .very-footer > div.right {
 footer .very-footer > div > * {
 	font-size:3.7vw;
 }
+
+/*HOME INTERNET*/
+
+#address-checking-banner {
+	height:142.567vw;
+	overflow:hidden;
+}
+
+#address-checking-banner img {
+	max-width:none;
+	height:100%;
+}
+
+#address-checking-banner form > * {
+	display:none;
+}
+
+#address-checking-banner form > button[type="submit"] {
+	display:block;
+}
+
+#address-checking-banner .content h1 {
+	font-size:7.33300vw;
+	max-width:72.26700vw;
+	text-align:left;
+	line-height:1.45455;
+	letter-spacing:0;
+	margin-bottom:4.7vw;
+}
+
+#address-checking-banner .content h3 {
+	text-align:left;
+	font-size:4.66700vw;
+	line-height:1.48571;
+	letter-spacing:0.05000em;
+	max-width:77.86700vw;
+	font-weight:100;
+	margin-bottom:11vw;
+
+}
+
+#address-checking-banner .content button {
+	margin:0;
+	width:53.06700vw;
+	height:11.20000vw;
+	font-size:3.24900vw;
+}
+
+#address-checking-banner .content {
+	top:18.3vw;
+	left:10.6vw;
+}
+
+#plans-and-packets {
+	padding:0% 11.20000%;
+	margin-bottom:14.7vw;
+}
+
+#plans-and-packets h2 {
+	font-size:6.66700vw;
+	line-height:1.80000;
+	letter-spacing:0;
+	font-family:'Gilroy Medium';
+	font-weight:100;
+	margin-bottom:2.4vw;
+}
+
+#address-checking-banner {
+	margin-bottom:8.8vw;
+}
+
+#plans-and-packets .tabs-and-navigation .right {
+	display:none;
+}
+#plans-and-packets .tabs-and-navigation {
+	display:block;
+	font-size:2.66700vw;
+	letter-spacing:0.05em;
+	margin-bottom:13.1vw;
+}
+
+#plans-and-packets .tabs-and-navigation .left a {
+	margin-right:5.5vw;
+}
+
+#plans-and-packets .tabs-and-navigation .left a:nth-of-type(2) {
+	display:none;
+}
+
+#plans-and-packets .actions {
+	display:block;
+}
+
+#plans-and-packets .actions .action {
+	width:100%;
+}
+
+#plans-and-packets .actions .action:nth-of-type(2) {
+	display:none;
+}
+
+#plans-and-packets .actions .action:nth-of-type(3) {
+	display:none;
+}
+
+#plans-and-packets .actions .action .action-header {
+	font-size:6.66700vw;
+	letter-spacing: 0.025em;
+	margin-bottom:3vw;
+}
+
+#plans-and-packets .actions .action > div {
+    padding: 0% 5.6vw;
+}
+
+#plans-and-packets .actions .action .gray-space {
+    padding-top: 6%;
+}
+
+#plans-and-packets .actions .action .action-description {
+	font-size:4.00000vw;
+	line-height:1.5;
+	letter-spacing:0.025em;
+	margin-bottom:7.9vw;
+}
+
+#plans-and-packets .actions .action .detail img {
+	width:10vw;
+	margin-right: 4.379vw;
+}
+
+#plans-and-packets .actions .action .detail p {
+	font-size:2.66700vw;
+}
+
+#plans-and-packets .actions .action .detail {
+	margin-bottom:6.5vw;
+}
+
+#plans-and-packets .actions .action .white-space {
+	padding:0;
+	padding-bottom:7.5vw;
+	padding-top:2.8vw;
+}
+
+#plans-and-packets .actions .action .white-space .avalible {
+	display:none;
+}
+
+#plans-and-packets .actions .action .white-space .price {
+	margin-bottom:3.8vw;
+}
+
+#plans-and-packets .actions .action .white-space .price span.number {
+	font-size:8.61700vw;
+
+}
+
+#plans-and-packets .actions .action .white-space .price span {
+	font-size:3.97700vw;
+}
+
+#plans-and-packets .actions .action .gray-space {
+	padding-bottom:0.4vw;
+}
+
+#plans-and-packets .actions .action .white-space .apply-plan {
+	width:53.33300vw;
+	height:11.46700vw;
+	font-size:3.24900vw;
+	margin-bottom:4.7vw;
+}
+
+#plans-and-packets .actions .action .white-space .full-terms {
+	font-size:3.24900vw;
+}
+
+
+#special-offers.home-internet-special-offers {
+	padding:0% 11%;
+	margin-bottom:15vw;
+}
+
+#special-offers.home-internet-special-offers h2 {
+	padding:0;
+	font-size:7.33300vw;
+	line-height:1.45455;
+	max-width:90%;
+	margin-bottom:8.9vw;
+}
+
+#special-offers.home-internet-special-offers .content {
+	padding:0;
+}
+
+#special-offers.home-internet-special-offers .content {
+	height:initial;
+}
+
+#special-offers.home-internet-special-offers .content .left {
+	height:83.46700vw;
+	padding:0% 7.30000%;
+	padding-top:10.6vw;
+}
+
+#special-offers.home-internet-special-offers .content h4 {
+	font-size:6.66700vw;
+}
+
+#special-offers.home-internet-special-offers .content .left p {
+	font-size:4.00000vw;
+	height:auto;
+	overflow:initial;
+}
+
+
+#special-offers.home-internet-special-offers .content a.button {
+    position: absolute;
+    bottom: 13%;
+    left: 6.656vw;
+}
+
+#special-offers.home-internet-special-offers .content .right {
+	display:none;
+}
+
+#how-to-connect {
+	padding: 0% 11%;
+}
+
+#how-to-connect h2 {
+	font-size:7.33300vw;
+	margin-bottom:16vw;
+}
+
+#how-to-connect .content .step {
+	float:none;
+	margin-bottom:13.8vw;
+	width:100% !important;
+}
+
+#how-to-connect .content .step.step3 {
+	margin-bottom:12vw;
+}
+
+
+#how-to-connect .content .step img {
+	width:8.93300vw;
+	margin-bottom:3.9vw;
+}
+
+#how-to-connect .content .step p {
+	font-size:4.00000vw;
+	max-width:78%;
+}
+
+#how-to-connect .content .request-connection {
+	display:flex;
+	margin:0 auto;
+	width:53.33300vw;
+	height:11.73300vw;
+	font-size:3.24900vw;
+	margin-bottom:18.8vw;
+}
+
 }

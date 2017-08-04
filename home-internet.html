@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Таттелеком - Главная</title>
+	<script src="./libs/jquery.js"></script>
+	<script src="./libs/jquery.bxslider/jquery.bxslider.min.js"></script>
+	<script src="./libs/script.js"></script>
+	<!-- <link href="./libs/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="main-wrapper">
+		<header>
+			<div class="left">
+				<img src="./img/menu-sandwich-desktop.svg" alt="Меню" id="menu-sandwich">
+				<a href="#">УСЛУГИ ДЛЯ ДОМА</a>
+				<a href="#">УСЛУГИ ДЛЯ БИЗНЕСА</a>
+				<a href="#">О КОМПАНИИ</a>
+				<a href="#">ПАРТНЕРАМ</a>
+			</div>
+			<div class="right">
+				<a href="#">СЛУЖБА ПОДДЕРЖКИ</a>
+				<a href="#">ОФИСЫ ПРОДАЖ</a>	
+				<a href="#" class="city-chooser">
+					<img src="./img/city-chooser-icon.svg"  id="city-chooser-icon">
+					<span>КАЗАНЬ</span>
+					<img src="./img/city-chooser-arrow.svg"  id="city-chooser-arrow">
+				</a>
+
+				<a href="#" class="dashboard">
+					<img src="./img/dashboard-icon.svg" id="dashboard-icon">
+					<span>ЛИЧНЫЙ КАБИНЕТ</span>
+				</a>
+				
+				<a href="#" class="connect">
+					<span>ПОДКЛЮЧИТЬСЯ</span>
+				</a>
+			</div>
+		</header>
+
+		<div class="header-mobile">
+			<div class="left">
+				<a href="#" class="top-menu-opener">
+					<span>Услуги для дома</span>
+					
+				</a>
+
+				<img src="./img/city-chooser-arrow.svg"  id="link-chooser-arrow">
+			</div>
+
+			<div class="right">
+				<img src="./img/dashboard-mobile.png" id="dashboard-icon-mobile">
+			</div>
+		</div>
+
+		<div class="main-page-menu-mobile">
+			<div class="left">
+				<img src="./img/logo.png" class="logo">
+			</div>
+
+			<div class="right">
+				<a href="#"><img src="./img/phone-icon.svg" alt="Позвонить" id="phone-mobile"></a>
+				<img src="./img/menu-sandwich-desktop.svg" alt="Меню" id="menu-sandwich-mobile">
+			</div>
+		</div>
+
+		<div class="main-page-menu">
+			<div class="left">
+				<img src="./img/logo.png" class="logo">
+			</div>
+
+			<div class="right">
+				<a href="#">Мобильная связь</a>
+				<a href="#">Пакеты услуг</a>
+				<a href="#">Интернет</a>
+				<a href="#">Телевидение</a>
+				<a href="#">Телефония</a>
+				<a href="tel:8 (843) 222-22-22" class="phone">(843) 222-22-22</a>
+			</div>
+		</div>
+
+		<div id="main-slider" style="display:none">
+			<ul class="bxslider">
+			  <li>
+			  	<img src="./img/main-banner-background-1.jpg" />
+			  	<div class="slider-text">
+			  		<h1>Домашний интернет «Таттелеком»</h1>
+			  		<p>Мы — местный оператор, поэтому развиваем сеть не только в крупных городах, но и в отдаленных уголках Республики!</p>
+			  		<a href="#" class="slider-button">
+			  			ПОДРОБНЕЕ О ТАРИФАХ
+			  		</a>
+			  	</div>
+			  </li>
+
+			  <li>
+			  	<img src="./img/main-banner-background-1.jpg" />
+			  	<div class="slider-text">
+			  		<h1>Домашний интернет «Таттелеком»</h1>
+			  		<p>Мы — местный оператор, поэтому развиваем сеть не только в крупных городах, но и в отдаленных уголках Республики!</p>
+			  		<a href="#" class="slider-button">
+			  			ПОДРОБНЕЕ О ТАРИФАХ
+			  		</a>
+			  	</div>
+			  </li>
+			  
+			</ul>
+
+			<div class="control-arrows">
+				<img src="./img/control-arrow.png" class="arrow-left" id="main-slider-prev">
+				<span class="current-slide-number">1</span>
+				<span>/</span>
+				<span class="overall-slides-number">3</span>
+				<img src="./img/control-arrow.png" class="arrow-right" id="main-slider-next">
+			</div>
+		</div>
+
+		<div id="address-checking-banner">
+			<img src="img/home-internet-banner-background.jpg">
+			<div class="content">
+				<h1>Домашний интернет на скорости до 100 Мбит/сек</h1>
+				<h3>Проверьте свой адрес на наличие технической возможности подключения к услугам Таттелеком</h3>
+				<form action="#">
+					<input type="text" name="city" id="city" placeholder="ВАШ ГОРОД">
+					<input type="text" name="street" id="street" placeholder="НАЗВАНИЕ УЛИЦЫ">
+					<input type="text" name="building" id="building" placeholder="НОМЕР ДОМА">
+					<input type="text" name="apt" id="apt" placeholder="№ КВАРТИРЫ">
+					<div class="checkbox-container">
+						<input type="checkbox" name="isPrivateHouse" id="isPrivateHouse">
+						<label for="isPrivateHouse"><span>ЧАСТНЫЙ ДОМ</span></label>
+					</div>
+
+					<button type="submit">
+						<span>ПОДКЛЮЧИТЬСЯ</span>
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<div id="main-slider-mobile">
+			<ul>
+				<li>
+					<div class="content">
+						<img src="./img/banner-mobile-background.jpg">
+					  	<div class="slider-text">
+					  		<h1>Домашний интернет «Таттелеком»</h1>
+					  		<p>Мы — местный оператор, поэтому развиваем сеть не только в крупных городах, но и в отдаленных уголках Республики!</p>
+					  		<a href="#" class="slider-button">
+					  			<span>ПОДРОБНЕЕ О ТАРИФАХ</span>
+					  		</a>
+					  	</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<img src="./img/banner-mobile-background.jpg">
+					  	<div class="slider-text">
+					  		<h1>Домашний интернет «Таттелеком»</h1>
+					  		<p>Мы — местный оператор, поэтому развиваем сеть не только в крупных городах, но и в отдаленных уголках Республики!</p>
+					  		<a href="#" class="slider-button">
+					  			<span>ПОДРОБНЕЕ О ТАРИФАХ</span>
+					  		</a>
+					  	</div>
+					</div>
+				</li>
+			</ul>
+			<div class="control-arrows">
+				<img src="./img/control-arrow.png" class="arrow-left" id="mobile-main-slider-prev">
+				<span class="mobile-current-slide-number">1</span>
+				<span>/</span>
+				<span class="mobile-overall-slides-number">3</span>
+				<img src="./img/control-arrow.png" class="arrow-right" id="mobile-main-slider-next">
+			</div>
+		</div>
+
+		<div id="plans-and-packets">
+			<h2>Тарифы и пакеты услуг</h2>
+			<div class="tabs-and-navigation">
+				<div class="left">
+					<a href="#">ПАКЕТЫ УСЛУГ</a>
+					<a href="#">ДЕЙСТВУЮЩИЕ ТАРИФЫ</a>
+					<a href="#">АРХИВНЫЕ ТАРИФЫ</a>
+				</div>
+				<div class="right">
+					<div class="control-arrows">
+						<img src="./img/control-arrow.png" class="arrow-left" id="plans-slider-prev">
+						<span class="plans-current-slide-number">1</span>
+						<span>/</span>
+						<span class="plans-overall-slides-number">3</span>
+						<img src="./img/control-arrow.png" class="arrow-right" id="plans-slider-next">
+					</div>
+				</div>
+			</div>
+
+			<div class="actions">
+				<div class="action">
+					<div class="gray-space">
+						<div class="action-header">Первый (IPTV)</div>
+						<p class="action-description">Безлимитный интернет + кабельное или цифровое телевидение</p>
+						<div class="detail">
+							<img src="./img/home-internet/detail-image.png">
+							<p>Комплексный Базовый <br>КТВ или IPTV</p>
+						</div>
+						<div class="detail">
+							<img src="./img/home-internet/detail-image.png">
+							<p>Комплексный Базовый <br>КТВ или IPTV</p>
+						</div>
+					</div>
+					<div class="white-space">
+						<div class="avalible">НА ТАРИФЕ ДОСТУПНО</div>
+						<div class="avalible">ЕЖЕМЕСЯЧНЫЕ БОНУСЫ</div>
+						<div class="price">
+							<span class="number">400</span>
+							<span>руб./месяц</span>
+						</div>
+						<a href="#" class="apply-plan"><span>ПОДКЛЮЧИТЬ ТАРИФ</span></a>
+						<div class="full-terms-centerer">
+							<a href="#" class="full-terms">ПОЛНЫЕ УСЛОВИЯ</a>
+						</div>
+					</div>
+				</div>
+				<div class="action">
+					<div class="gray-space">
+						<div class="action-header">Первый (IPTV)</div>
+						<p class="action-description">Безлимитный интернет + кабельное или цифровое телевидение</p>
+						<div class="detail">
+							<img src="./img/home-internet/detail-image.png">
+							<p>Комплексный Базовый <br>КТВ или IPTV</p>
+						</div>
+						<div class="detail">
+							<img src="./img/home-internet/detail-image.png">
+							<p>Комплексный Базовый <br>КТВ или IPTV</p>
+						</div>
+					</div>
+					<div class="white-space">
+						<div class="avalible">НА ТАРИФЕ ДОСТУПНО</div>
+						<div class="avalible">ЕЖЕМЕСЯЧНЫЕ БОНУСЫ</div>
+						<div class="price">
+							<span class="number">400</span>
+							<span>руб./месяц</span>
+						</div>
+						<a href="#" class="apply-plan"><span>ПОДКЛЮЧИТЬ ТАРИФ</span></a>
+						<div class="full-terms-centerer">
+							<a href="#" class="full-terms">ПОЛНЫЕ УСЛОВИЯ</a>
+						</div>
+					</div>
+				</div>
+				<div class="action">
+					<div class="gray-space">
+						<div class="action-header">Первый (IPTV)</div>
+						<p class="action-description">Безлимитный интернет + кабельное или цифровое телевидение</p>
+						<div class="detail">
+							<img src="./img/home-internet/detail-image.png">
+							<p>Комплексный Базовый <br>КТВ или IPTV</p>
+						</div>
+						<div class="detail">
+							<img src="./img/home-internet/detail-image.png">
+							<p>Комплексный Базовый <br>КТВ или IPTV</p>
+						</div>
+					</div>
+					<div class="white-space">
+						<div class="avalible">НА ТАРИФЕ ДОСТУПНО</div>
+						<div class="avalible">ЕЖЕМЕСЯЧНЫЕ БОНУСЫ</div>
+						<div class="price">
+							<span class="number">400</span>
+							<span>руб./месяц</span>
+						</div>
+						<a href="#" class="apply-plan"><span>ПОДКЛЮЧИТЬ ТАРИФ</span></a>
+						<div class="full-terms-centerer">
+							<a href="#" class="full-terms">ПОЛНЫЕ УСЛОВИЯ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="special-offers" class="home-internet-special-offers">
+			<h2>Акции и спецпредложения</h2>
+			<div class="content">
+				<div class="left">
+					<h4>Специальные предложения и акции</h4>
+					<p>Действующие и архивные  предложения для абонентов Таттелеком и Летай </p>
+					<a href="#" class="button">СМОТРЕТЬ ВСЕ АКЦИИ</a>
+				</div>
+
+				<div class="right">
+					<div class="special-offers-slider-controls special-offers-slider-controls-mobile">
+						<img src="./img/control-arrow.png" class="arrow-left special-offers-slider-prev" id="special-offers-slider-prev">
+						<span class="special-offers-current-slide-number">1</span>
+						<span>/</span>
+						<span class="special-offers-overall-slides-number">3</span>
+						<img src="./img/control-arrow.png" class="arrow-right special-offers-slider-next" id="special-offers-slider-next">
+					</div>
+					<ul>
+						<li>
+							<div>
+								<h4>Выбери свой красивый номер мобильной связи «Летай»</h4>
+								<p>Для абонентов местной телефонной связи с абонентским тарифным планом звонки на мобильные телефоны "Летай" - 0 рублей. С повременным тарифном планом - 68 копеек. </p>
+
+								<a href="#" class="button">СМОТРЕТЬ УСЛОВИЯ АКЦИИ</a>
+							</div>
+
+							<div class="special-offers-slider-controls">
+								<img src="./img/control-arrow.png" class="arrow-left special-offers-slider-prev" id="special-offers-slider-prev">
+								<span class="special-offers-current-slide-number">1</span>
+								<span>/</span>
+								<span class="special-offers-overall-slides-number">3</span>
+								<img src="./img/control-arrow.png" class="arrow-right special-offers-slider-next" id="special-offers-slider-next">
+							</div>
+
+						</li>
+
+						<li>
+							<div>
+								<h4>Выбери свой красивый номер мобильной связи «Летай»</h4>
+								<p>Для абонентов местной телефонной связи с абонентским тарифным планом звонки на мобильные телефоны "Летай" - 0 рублей. С повременным тарифном планом - 68 копеек. </p>
+
+								<a href="#" class="button">СМОТРЕТЬ УСЛОВИЯ АКЦИИ</a>
+							</div>
+
+							<div class="special-offers-slider-controls">
+								<img src="./img/control-arrow.png" class="arrow-left special-offers-slider-prev" id="special-offers-slider-prev">
+								<span class="special-offers-current-slide-number">1</span>
+								<span>/</span>
+								<span class="special-offers-overall-slides-number">3</span>
+								<img src="./img/control-arrow.png" class="arrow-right special-offers-slider-next" id="special-offers-slider-next">
+							</div>
+
+						</li>
+					</ul>
+
+
+				</div>
+			</div>
+		</div>
+
+		<div id="how-to-connect">
+			<h2>Как подключиться?</h2>
+			<div class="content">
+				<div class="step step1">
+					<img src="./img/home-internet/connect-step-1.png">
+					<p>Оставьте заявку, позвоните по телефону (843) 222-22-22 или обратитесь в офис продаж</p>
+				</div>
+				<div class="step step2">
+					<img src="./img/home-internet/connect-step-1.png">
+					<p>Оставьте заявку, позвоните по телефону (843) 222-22-22 или обратитесь в офис продаж</p>
+				</div>
+				<div class="step step3">
+					<img src="./img/home-internet/connect-step-1.png">
+					<p>Оставьте заявку, позвоните по телефону (843) 222-22-22 или обратитесь в офис продаж</p>
+				</div>
+
+				<a href="#" class="request-connection"><span>ЗАЯВКА НА ПОДКЛЮЧЕНИЕ</span></a>
+			</div>
+		</div>
+
+		<footer>
+			<div class="age">
+				12+
+			</div>
+
+			<div class="footer-links">
+				<div>
+					<a href="#">Лицензии</a>
+					<a href="#">Документы</a>
+					<a href="#">Инструкции</a>
+					<a href="#">Обратная связь</a>
+				</div>
+
+				<div>
+					<a href="#">Акции</a>
+					<a href="#">Вопросы и ответы</a>
+					<a href="#">Служба поддержки</a>
+					<a href="#">Офисы продаж</a>
+				</div>
+				<div>
+					<a href="#">Услуги для дома</a>
+					<a href="#">Услуги для бизнеса</a>
+					<a href="#">О компании</a>
+					<a href="#">Партнерам</a>
+				</div>
+				<div class="socials">
+					<div>Мы в социальных сетях:</div>
+					<a href="#"><img src="img/socials/vk.png"></a>
+					<a href="#"><img src="img/socials/instagram.png"></a>
+					<a href="#"><img src="img/socials/facebook.png"></a>
+					<a href="#"><img src="img/socials/ok.png"></a>
+					<a href="#"><img src="img/socials/youtube.png"></a>
+				</div>
+				<div class="contact-center">
+					<div>Контакт-центр:</div>
+					<div class="number">(843) 222-22-22</div>
+				</div>
+			</div>
+
+			<div class="very-footer">
+				<div class="left">
+					<span>© <script>document.write((new Date()).getFullYear())</script> ПАО «Таттелеком»</span>
+					<a href="#">Использование материалов сайта</a>
+					<span>Сайт является СМИ. Эл №ФС77-66502 от 14.07.2016</span>
+				</div>
+
+				<div class="right">
+					<span>Сделано в Hoso Bureau</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

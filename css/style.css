@@ -756,6 +756,356 @@ footer .very-footer > div.right {
 	letter-spacing: -0.05em;
 }
 
+
+
+
+
+
+
+/*HOME INTERNET*/
+
+#address-checking-banner {
+	position:relative;
+	margin-bottom:2.4vw;
+}
+#address-checking-banner img {
+	max-width:100%;
+}
+
+#address-checking-banner .content {
+	position:absolute;
+	color:#ffffff;
+	left:0;
+	top:24%;
+	width:100%;
+	text-align:center;
+}
+
+#address-checking-banner .content h1 {
+	font-size: 2.55vw;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Gilroy Light';
+    margin-bottom: 1.05vw;
+}
+
+#address-checking-banner .content h3 {
+	  text-align: center;
+    font-size: 1.45vw;
+    font-family: 'Gilroy Light';
+    margin-bottom:3vw;
+}
+
+#address-checking-banner .content input[type="text"] {
+	height:3vw;
+	background:transparent;
+	border: 1px solid #ffffff;
+	margin-left:1vw;
+	margin-right:1vw;
+	font-family:'Gilroy Medium';
+	font-weight:200;
+	font-size:0.833333vw;
+	padding-left:1vw;
+}
+
+#address-checking-banner .content input[type="text"]::-webkit-input-placeholder {
+	color:#ffffff;
+
+}
+
+#address-checking-banner .content  #city {
+	width:20vw;
+}
+
+#address-checking-banner .content  #street {
+	width:22vw;
+}
+
+#address-checking-banner .content  #building {
+	width:8vw;
+}
+
+#address-checking-banner .content  #apt {
+	width:8%;
+}
+
+#address-checking-banner .content .checkbox-container {
+	margin-top:2.3vw;
+	margin-bottom:1.3vw;
+}
+
+#address-checking-banner .content button {
+	background:#0072ce;
+	border:0;
+	font-size:0.93800vw;
+	color:#ffffff;
+	font-family:'Gilroy SemiBold';
+	letter-spacing:0.05000em;
+	display:flex;
+	margin:0 auto;
+	width:12.50000vw;
+	height:3.38542vw;
+	justify-content: center;
+	align-items:center;
+}
+
+#address-checking-banner .content button:hover {
+	cursor:pointer;
+}
+
+#address-checking-banner .content #isPrivateHouse {
+	display:none;
+}
+
+#address-checking-banner .content #isPrivateHouse~label span {
+	display:inline-block;
+	vertical-align:middle;
+	font-size:0.83400vw;
+}
+
+#address-checking-banner .content #isPrivateHouse~label:before {
+	display:inline-block;
+	width:1.30208vw;
+	height:1.30208vw;
+	line-height:1.1vw;
+	vertical-align:middle;
+	border:1px solid #ffffff;
+	content:'';
+	margin-right:0.78125vw;
+	cursor:pointer;
+}
+
+#address-checking-banner .content #isPrivateHouse:checked~label:before {
+
+	content:'■';
+
+}
+
+#plans-and-packets {
+	padding:0% 6%;
+	margin-bottom:6.3vw;
+}
+
+#plans-and-packets h2 {
+	font-size: 2.29200vw;
+	margin-bottom:1.5vw;
+}
+
+#plans-and-packets .tabs-and-navigation {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size:1.04200vw;
+	margin-bottom:3.3vw;
+}
+
+#plans-and-packets .tabs-and-navigation .left a {
+	letter-spacing:0.05em;
+	font-family:'Gilroy Medium';
+	margin-right:1.5vw;
+}
+
+#plans-and-packets .tabs-and-navigation .right .control-arrows img {
+	width:1.30200vw;
+}
+
+#plans-and-packets .actions {
+	display:flex;
+	justify-content: space-between;
+}
+
+#plans-and-packets .actions .action {
+	width:31.3%;
+	position:relative;
+    
+    background:#f9f9f9;
+     box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
+}
+
+#plans-and-packets .actions .action > div {
+	padding: 0% 2.8vw;
+}
+
+#plans-and-packets .actions .action .gray-space {
+	padding-top:7%;
+}
+
+#plans-and-packets .actions .action .action-header {
+	font-size:2.60400vw;
+	font-family:'Gilroy Medium';
+	color:#0072ce;
+	margin-bottom:1.4vw;
+}
+
+#plans-and-packets .actions .action .action-description {
+	font-size:1.25000vw;
+	letter-spacing:0.02500em;
+	color:#1c1c1c;
+	margin-bottom:3.6vw;
+}
+
+
+#plans-and-packets .actions .action .detail {
+	margin-bottom:2.5vw;
+}
+
+#plans-and-packets .actions .action .detail img {
+	float:left;
+	margin-right:1.97900vw;
+}
+
+#plans-and-packets .actions .action .detail p {
+	font-size:0.99000vw;
+	color:#0072ce;
+	font-family:'Gilroy Medium';
+	line-height:1.66667;
+	letter-spacing:0.05000em;
+}
+
+#plans-and-packets .actions .action .detail:after {
+	clear:both;
+	display:block;
+	content:'';
+}
+
+#plans-and-packets .actions .action .white-space {
+	background:#ffffff;
+	padding-top:9%;
+	padding-bottom:9%;
+}
+
+#plans-and-packets .actions .action .white-space .avalible {
+	font-size:0.93800vw;
+	color:#1c1c1c;
+	font-family:'Gilroy Medium';
+	letter-spacing:0.05em;
+	
+}
+
+#plans-and-packets .actions .action .white-space .avalible:first-of-type {
+	margin-bottom:1.3vw;
+}
+
+#plans-and-packets .actions .action .white-space .avalible:nth-of-type(2) {
+	margin-bottom:2.2vw;
+}
+
+#plans-and-packets .actions .action .white-space .price {
+	text-align:center;
+	margin-bottom:0.9vw;
+}
+
+#plans-and-packets .actions .action .white-space .price span.number {
+	font-size:2.86700vw;
+	color:#0072ce;
+	font-family:'Gilroy Medium';
+	letter-spacing:0.025em;
+	font-weight:100;
+	margin-right:0.3vw;
+}
+
+#plans-and-packets .actions .action .white-space .price span {
+	font-size:1.14600vw;
+	letter-spacing:0.02500em;
+}
+
+#plans-and-packets .actions .action .white-space .apply-plan {
+	display:flex;
+	margin: 0 auto;
+	width:14.58300vw;
+	height:3.38500vw;
+	align-items: center;
+	justify-content: center;
+	color:#ffffff;
+	font-size:0.93800vw;
+	letter-spacing:0.02500em;
+	font-family:'Gilroy SemiBold';
+	background:#0072ce;
+	margin-bottom:0.6vw;
+}
+
+#plans-and-packets .actions .action .white-space .full-terms-centerer {
+	text-align:center;
+}
+
+#plans-and-packets .actions .action .white-space .full-terms {
+	font-size:0.93800vw;
+	letter-spacing:0.02500em;
+	font-family:'Gilroy SemiBold';
+	color:#0072ce;
+}
+
+#special-offers.home-internet-special-offers .content {
+	margin-top:0;
+}
+
+#special-offers.home-internet-special-offers h2 {
+    font-size: 2.29200vw;
+    margin-bottom: 2.5vw;
+    padding:0% 6%;
+}
+
+#how-to-connect {
+	padding:0% 6%;
+	padding-bottom:4.7%;
+}
+
+#how-to-connect h2 {
+	font-size: 2.29200vw;
+    margin-bottom: 4.3vw;
+}
+
+#how-to-connect .content .step {
+	float:left;
+	margin-bottom:3.3vw;
+}
+
+#how-to-connect .content .step img {
+	width:2.5vw;
+	display:block;
+	margin-bottom:1.5vw;
+}
+
+#how-to-connect .content .step p {
+	font-size:1.25000vw;
+	line-height:1.50000;
+	letter-spacing:0.02500em;
+	color:#1c1c1c;
+}
+
+#how-to-connect .content .step1 {
+	width:37.52900%;
+}
+
+#how-to-connect .content .step2 {
+	width:31.26500%;
+}
+
+#how-to-connect .content .step3 {
+	width:25.00000%;
+}
+
+#how-to-connect .content .request-connection:before {
+	display:block;
+	content:'';
+	clear:both;
+}
+
+#how-to-connect .content .request-connection {
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	width:17.03100vw;
+	height:3.38500vw;
+	background:#0072ce;
+	color:#ffffff;
+	font-family:'Gilroy SemiBold';
+	font-size:0.93800vw;
+	letter-spacing:0.05em;
+
+}
+
+
 @media all and (max-width:1900px) {
 	#special-offers .content p {
 		font-size:18px;

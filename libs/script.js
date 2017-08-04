@@ -46,26 +46,27 @@ $(document).ready(function() {
 
 
 	/*SERVICES FOR HOME SLIDER*/
+	if ($('.services-for-home-slider ul').length>0) {
 
-	var servicesForHomeSlider=$('.services-for-home-slider ul').bxSlider({
-		onSlideAfter: function($slideElement, oldIndex, newIndex){
-	    // do mind-blowing JS stuff here
-	    $('.services-for-home-current-slide-number').html(servicesForHomeSlider.getCurrentSlide()+1);
-	  }
-	});
-	var servicesForHomeSliderCount = servicesForHomeSlider.getSlideCount();
-	$(".services-for-home-overall-slides-number").html(servicesForHomeSliderCount);
+		var servicesForHomeSlider=$('.services-for-home-slider ul').bxSlider({
+			onSlideAfter: function($slideElement, oldIndex, newIndex){
+		    // do mind-blowing JS stuff here
+		    $('.services-for-home-current-slide-number').html(servicesForHomeSlider.getCurrentSlide()+1);
+		  }
+		});
+		var servicesForHomeSliderCount = servicesForHomeSlider.getSlideCount();
+		$(".services-for-home-overall-slides-number").html(servicesForHomeSliderCount);
 
-	$('#services-for-home-slider-prev').click(function(){
-	  servicesForHomeSlider.goToNextSlide();
-	  return false;
-	});
+		$('#services-for-home-slider-prev').click(function(){
+		  servicesForHomeSlider.goToNextSlide();
+		  return false;
+		});
 
-	$('#services-for-home-slider-next').click(function(){
-	  servicesForHomeSlider.goToPrevSlide();
-	  return false;
-	});
-
+		$('#services-for-home-slider-next').click(function(){
+		  servicesForHomeSlider.goToPrevSlide();
+		  return false;
+		});
+	}
 
 	/*SPECIAL OFFERS SLIDER*/
 	var specialOffersSlider=$('#special-offers ul').bxSlider({

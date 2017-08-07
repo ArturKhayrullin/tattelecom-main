@@ -2694,6 +2694,7 @@ header > div.right > *.connect {
     	line-height:1.49;
     	letter-spacing:0.05000em;
     	max-width:none;
+        margin-bottom:12vw;
     }
 
     #complex-plans .tabs-and-navigation {
@@ -2706,7 +2707,7 @@ header > div.right > *.connect {
     }
 
     #complex-plans .complex-plans-content .complex-plan .gray {
-    	padding-top:12.9vw;
+    	padding-top:3.9vw;
     }
 
     #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-title {
@@ -2800,7 +2801,7 @@ header > div.right > *.connect {
     }
 
     #complex-plans .complex-plans-content .complex-plan {
-    	margin-bottom:4.1vw;
+    	margin-bottom:13.1vw;
     }
 
     #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option:nth-of-type(n+3) {

@@ -2,47 +2,53 @@ var mainSlider='';
 
 $(document).ready(function() {
 
-	mainSlider=$('.bxslider').bxSlider({
-		onSlideAfter: function($slideElement, oldIndex, newIndex){
-	    // do mind-blowing JS stuff here
-	    $('.current-slide-number').html(mainSlider.getCurrentSlide()+1);
-	  }
-	});
+	$("img.logo").click(function() {
+		window.location.href="./index.html";
+	})
 
-	var mainSliderCount = mainSlider.getSlideCount();
-	$(".overall-slides-number").html(mainSliderCount);
+	if ($('.bxslider').length>0) {
 
-	$('#main-slider-next').click(function(){
-	  mainSlider.goToNextSlide();
-	  return false;
-	});
+		mainSlider=$('.bxslider').bxSlider({
+			onSlideAfter: function($slideElement, oldIndex, newIndex){
+		    // do mind-blowing JS stuff here
+		    $('.current-slide-number').html(mainSlider.getCurrentSlide()+1);
+		  }
+		});
 
-	$('#main-slider-prev').click(function(){
-	  mainSlider.goToPrevSlide();
-	  return false;
-	});
+		var mainSliderCount = mainSlider.getSlideCount();
+		$(".overall-slides-number").html(mainSliderCount);
 
-	mobileSlider=$('#main-slider-mobile ul').bxSlider({
-		onSlideAfter: function($slideElement, oldIndex, newIndex){
-	    // do mind-blowing JS stuff here
-	    $('.mobile-current-slide-number').html(mobileSlider.getCurrentSlide()+1);
-	  }
-	});
+		$('#main-slider-next').click(function(){
+		  mainSlider.goToNextSlide();
+		  return false;
+		});
 
-	var mobileSliderCount = mobileSlider.getSlideCount();
-	$(".mobile-overall-slides-number").html(mainSliderCount);
+		$('#main-slider-prev').click(function(){
+		  mainSlider.goToPrevSlide();
+		  return false;
+		});
 
-	$('#mobile-main-slider-next').click(function(){
-	  mobileSlider.goToNextSlide();
-	  return false;
-	});
+		mobileSlider=$('#main-slider-mobile ul').bxSlider({
+			onSlideAfter: function($slideElement, oldIndex, newIndex){
+		    // do mind-blowing JS stuff here
+		    $('.mobile-current-slide-number').html(mobileSlider.getCurrentSlide()+1);
+		  }
+		});
 
-	$('#mobile-main-slider-prev').click(function(){
-	  mobileSlider.goToPrevSlide();
-	  return false;
-	});
+		var mobileSliderCount = mobileSlider.getSlideCount();
+		$(".mobile-overall-slides-number").html(mainSliderCount);
 
+		$('#mobile-main-slider-next').click(function(){
+		  mobileSlider.goToNextSlide();
+		  return false;
+		});
 
+		$('#mobile-main-slider-prev').click(function(){
+		  mobileSlider.goToPrevSlide();
+		  return false;
+		});
+
+	}
 
 
 	/*SERVICES FOR HOME SLIDER*/
@@ -69,25 +75,26 @@ $(document).ready(function() {
 	}
 
 	/*SPECIAL OFFERS SLIDER*/
-	var specialOffersSlider=$('#special-offers ul').bxSlider({
-		onSlideAfter: function($slideElement, oldIndex, newIndex){
-	    // do mind-blowing JS stuff here
-	    $('.special-offers-current-slide-number').html(specialOffersSlider.getCurrentSlide()+1);
-	  }
-	});
+	if ($('#special-offers ul').length>0) {
+		var specialOffersSlider=$('#special-offers ul').bxSlider({
+			onSlideAfter: function($slideElement, oldIndex, newIndex){
+		    // do mind-blowing JS stuff here
+		    $('.special-offers-current-slide-number').html(specialOffersSlider.getCurrentSlide()+1);
+		  }
+		});
 
-	var specialOffersSliderCount = specialOffersSlider.getSlideCount();
-	$(".special-offers-overall-slides-number").html(specialOffersSliderCount);
+		var specialOffersSliderCount = specialOffersSlider.getSlideCount();
+		$(".special-offers-overall-slides-number").html(specialOffersSliderCount);
 
-	$('.special-offers-slider-next').click(function(){
-	  specialOffersSlider.goToNextSlide();
-	  return false;
-	});
+		$('.special-offers-slider-next').click(function(){
+		  specialOffersSlider.goToNextSlide();
+		  return false;
+		});
 
-	$('.special-offers-slider-prev').click(function(){
-	  specialOffersSlider.goToPrevSlide();
-	  return false;
-	});
-
+		$('.special-offers-slider-prev').click(function(){
+		  specialOffersSlider.goToPrevSlide();
+		  return false;
+		});
+	}
 
 });

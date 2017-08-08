@@ -2,6 +2,21 @@ var mainSlider='';
 
 $(document).ready(function() {
 
+	/*MAIN MENU*/
+
+	$("#menu-sandwich").click(function() {
+		$("#main-menu").show().addClass("visible");
+	});
+
+	$("#menu-close-button").click(function() {
+		$("#main-menu").on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(e){ 
+			$(this).hide();
+			$(this).off();
+		});
+
+		$("#main-menu").removeClass("visible");
+	});
+
 	$("img.logo").click(function() {
 		window.location.href="./index.html";
 	})

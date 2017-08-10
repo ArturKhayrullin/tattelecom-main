@@ -17,6 +17,12 @@ $(document).ready(function() {
 		$("#main-menu").removeClass("visible");
 	});
 
+	/*SUBMENUS*/
+
+	// $(".main-page-menu .right a").not('.phone').mouseenter(function() {
+	// 	$(".main-page-menu-submenu").hide();
+	// 	$("#"+$(this).attr("id")+"-submenu").show();
+	// })
 	$("img.logo").click(function() {
 		window.location.href="./index.html";
 	})
@@ -111,5 +117,29 @@ $(document).ready(function() {
 		  return false;
 		});
 	}
+
+	/*SELECTS*/
+	 $('#district-selector, #town-selector').select2({
+	 	minimumResultsForSearch: Infinity
+	 }).on("select2:open", function () {
+    $('.select2-results__options').niceScroll({
+    	cursorcolor: "#666666",
+    	autohidemode: false,
+    	background: "rgba(0,0,0,0.2)",
+    	cursorwidth: "4px",
+    	cursorborder: "0",
+    	cursorborderradius: "1px",
+    	railoffset:10
+    });
+});
+
+	 $('.city-chooser').click(function(e) {
+	 	e.preventDefault();
+	 	$('#city-select-menu').show();
+	 });
+
+	 $('#city-select-menu .header .right').click(function() {
+	 	$('#city-select-menu').hide();
+	 })
 
 });

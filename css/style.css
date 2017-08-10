@@ -14,6 +14,7 @@
     font-family: 'Gilroy Light';
     src: url(../fonts/Gilroy-Light.otf);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -59,8 +60,10 @@ a {
 
 #main-menu {
     position:fixed;
-    width:100vw;
-    height:100vw;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
     background:#0072ce;
     z-index:1000;
     color:#ffffff;
@@ -76,7 +79,7 @@ a {
     padding:0vw 5.57292vw;
     position: absolute;
     width: 100%;
-    top: 17%;
+    top: 30.7%;
 }
 
 #main-menu .content:after {
@@ -154,6 +157,15 @@ header {
     -ms-flex-align: center;
     align-items: center;
     padding: 0% 2.9%;
+    height:3.90625vw;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1;
+}
+
+body {
+    margin-top:3.90625vw;
 }
 .header-mobile {
     display: none;
@@ -216,7 +228,12 @@ header > div.right > * {
 header > div.right > *.connect {
     margin-left: 31px;
 }
-.main-page-menu {
+.main-page-menu{
+    height: 119px;
+    font-size: 23px;
+    color: #1c1c1c;
+    position:relative;
+    padding: 0% 2.9%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -226,14 +243,13 @@ header > div.right > *.connect {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 119px;
-    font-size: 23px;
-    color: #1c1c1c;
-    padding-left: 53px;
-    padding-right: 53px;
-    padding: 0% 2.9%;
     padding-top: 7px;
+    position:relative;
+    
 }
+
+
+
 .main-page-menu-mobile {
     display: none;
 }
@@ -246,6 +262,210 @@ header > div.right > *.connect {
 .main-page-menu a.phone {
     font-size: 33px;
 }
+
+.main-page-menu .main-page-menu-submenu {
+    position:absolute;
+    bottom:-5.52083vw;
+    z-index:100;
+    background:#ffffff;
+    height:5.52083vw;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    left:0;
+    right:0;
+    border-top:1px solid #d2d2d2;
+    border-bottom:1px solid #d2d2d2;
+    padding-right:1.19792vw;
+    display:none;
+}
+
+.main-page-menu .dropdown:hover .main-page-menu-submenu {
+    display:flex;
+}
+
+.main-page-menu .right {
+    display:flex;
+    height:100%;
+    align-items:center;
+}
+
+.main-page-menu .right .dropdown {
+    height:100%;
+    display:flex;
+    align-items:center;
+}
+
+#city-select-menu {
+    position:fixed;
+    width:95.00000vw;
+    height:32.18750vw;
+    background:#ffffff;
+    top:3.90625vw;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:1;
+    box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
+    padding: 3.45833vw 3.37292vw;
+    
+}
+
+#city-select-menu .header {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom:4.6vw;
+}
+
+#city-select-menu .header .left {
+    font-size:1.97917vw;
+    color: #1c1c1c;
+    line-height:1.21053;
+}
+
+#city-select-menu .header .right img {
+    width:1.77083vw;
+    filter:invert(100%);
+    margin-left:0.93750vw;
+}
+
+#city-select-menu .header .right {
+    cursor:pointer;
+    font-size:0.93750vw;
+    text-transform: uppercase;
+    font-family:'Gilroy SemiBold';
+    display:flex;
+    align-items:center;
+}
+
+#city-select-menu .selection-block {
+    display:flex;
+    justify-content: space-between;
+}
+
+#city-select-menu .selection-block .left {
+    display:flex;
+}
+
+#city-select-menu .selection-block .left .column {
+    width:16.71875vw;
+}
+
+#city-select-menu .selection-block .left .column a {
+    display:block;
+    font-size:1.14583vw;
+    color:#1c1c1c;
+    margin-bottom:0.9vw;
+}
+
+#city-select-menu .selection-block .left .column:first-of-type a:nth-of-type(-n+7) {
+    font-family:'Gilroy SemiBold';
+    margin-bottom:0.82vw;
+}
+
+#city-select-menu .selection-block  .right {
+    width: 24.35208vw;
+}
+
+#city-select-menu .selection-block  .right .title {
+    font-size:1.14583vw;
+    color:#606060;
+    letter-spacing:0.01500em;
+    margin-bottom:2.2vw;
+}
+
+#city-select-menu .selection-block  .right .select-container {
+    margin-bottom:1.45833vw;
+}
+
+#city-select-menu .selection-block  .right .city-select-btn {
+    display:flex;
+    margin:0 auto;
+    width:11.04167vw;
+    height:3.38542vw;
+    border:2px solid #c8c8c8;
+    font-size:0.93750vw;
+    color:#1c1c1c;
+    font-family:'Gilroy SemiBold';
+    justify-content: center;
+    align-items:center;
+    text-transform:uppercase;
+    letter-spacing:0.05000em;
+
+}
+
+.select2-container--default .select2-selection--single {
+    height:3.95833vw;
+    border:1px solid #9b9b9b;
+    border-radius:0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height:3.95833vw;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding:0vw 1.35417vw;
+    font-size:1.14583vw;
+}
+
+.select2-dropdown {
+    border-radius:0;
+    border-color:#9b9b9b;
+    border-width:1px;
+}
+
+.select2-results__option {
+    font-size:1.14583vw;
+    padding:0vw 1.40625vw;
+    height:3.28125vw;
+    line-height:3.28125vw;
+    color:#1c1c1c;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color:#f3f3f3;
+    color:inherit;
+}
+
+.select2-container--default .select2-selection--single {
+    outline:none !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    width:14px;
+    height:8px;
+    position:absolute;
+    top:50%;
+    right:6.06695%;
+    transform:translateY(-50%);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border:none;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    background:url(../img/select-arrow.svg);
+    background-size:cover;
+    top:0;
+    left:0;
+    transition:.3s;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    transform:rotate(180deg);
+}
+
+.nicescroll-rails {
+    left:auto !important;
+    right:4.57380% !important;
+    height:100%;
+    transform:scaleY(0.9);
+
+}
+
 #main-slider {
     position: relative;
     margin-bottom: 86px;
@@ -1365,7 +1585,7 @@ footer .very-footer > div.right {
 }
 @media all and (max-width: 1500px) {
     header {
-        height: 54px;
+        /*height: 54px;*/
         font-size: 10px;
     }
     #menu-sandwich {
@@ -1690,7 +1910,7 @@ header > div.right > *.connect {
 }*/
     
     header {
-        height: 39.96px;
+        /*height: 39.96px;*/
         font-size: 9px;
     }
     #menu-sandwich {

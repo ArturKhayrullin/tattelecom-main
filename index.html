@@ -6,8 +6,11 @@
 	<title>Таттелеком - Главная</title>
 	<script src="./libs/jquery.js"></script>
 	<script src="./libs/jquery.bxslider/jquery.bxslider.min.js"></script>
+	<script src="./libs/select2/js/select2.full.min.js"></script>
+	<script src="./libs/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
 	<script src="./libs/script.js"></script>
 	<!-- <link href="./libs/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="./libs/select2/css/select2.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -95,6 +98,90 @@
 		</div>
 	</div>
 	<div class="main-wrapper">
+		<div id="city-select-menu" style="display:none">
+			<div class="header">
+				<div class="left">
+					Республика Татарстан
+				</div>
+				<div class="right">
+					<span>ЗАКРЫТЬ</span>
+					<img src="./img/menu-close-icon.svg"/>
+				</div>
+			</div>
+			<div class="selection-block">
+				<div class="left">
+					<div class="column">
+						<a href="#">Казань</a>
+						<a href="#">Бугульма</a>
+						<a href="#">Набережные Челны</a>
+						<a href="#">Чистополь</a>
+						<a href="#">Альметевск</a>
+						<a href="#">Елабуга</a>
+						<a href="#">Нижнекамск</a>
+						<a href="#">Высокая Гора</a>
+					</div>
+					<div class="column">
+						<a href="#">Агрыз</a>
+						<a href="#">Азнакаево</a>
+						<a href="#">Боровое Матюшино</a>
+						<a href="#">Зеленодольск</a>
+						<a href="#">Куркачи</a>
+						<a href="#">Менделеевск</a>
+						<a href="#">Усады</a>
+						<a href="#">Елабуга</a>
+					</div>	
+					<div class="column">
+						<a href="#">Актюбинский</a>
+						<a href="#">Бавлы</a>
+						<a href="#">Заинск</a>
+						<a href="#">Камские поляны</a>
+						<a href="#">Лениногорск</a>
+						<a href="#">Нурлат</a>
+						<a href="#">П. Джалиль</a>
+					</div>				
+
+				</div>
+
+				<div class="right">
+					<div class="title">Другой населённый пункт</div>
+					<div class="select-container">
+						<select id="district-selector" style="width: 100%">
+							<option>Выбрать район</option>
+							<option>Агрызский район</option>
+							<option>Агрызский район</option>
+							<option>Агрызский район</option>
+							<option>Агрызский район</option>
+							<option>Агрызский район</option>
+							<option>Агрызский район</option>
+							<option>Агрызский район</option>
+							<option>Агрызский район</option>
+							<option>Агрызский район</option>
+							<option>Агрызский район</option>
+							<option>Агрызский район</option>
+							<option>Агрызский район</option>
+							<option>Агрызский район</option>
+						</select>
+					</div>
+					<div class="select-container">
+						<select id="town-selector" style="width: 100%">
+							<option>Выбрать населённый пункт</option>
+							<option>Иртуши</option>
+							<option>Казещиво</option>
+							<option>Виляр</option>
+							<option>Амирхан тукталышы</option>
+							<option>Иртуши</option>
+							<option>Казещиво</option>
+							<option>Виляр</option>
+							<option>Амирхан тукталышы</option>
+						</select>
+					</div>
+
+					<div class="city-select-btn">
+						<span>Выбрать</span>
+					</div>					
+				</div>
+			</div>
+		</div>
 		<header>
 			<div class="left">
 				<img src="./img/menu-sandwich-desktop.svg" alt="Меню" id="menu-sandwich">
@@ -155,13 +242,77 @@
 			</div>
 
 			<div class="right">
-				<a href="#">Мобильная связь</a>
-				<a href="./complex.html">Пакеты услуг</a>
-				<a href="./home-internet.html">Интернет</a>
-				<a href="./television.html">Телевидение</a>
-				<a href="./telephony.html">Телефония</a>
+				<div class="dropdown">
+					<a href="#" id="celluar">Мобильная связь</a>
+					<div id="celluar-submenu" class="main-page-menu-submenu">
+						<div class="links">
+							<a href="#">celluar-submenu</a>
+							<a href="#">celluar-submenu</a>
+							<a href="#">celluar-submenu</a>
+							<a href="#">celluar-submenuи</a>
+							<a href="#">celluar-submenu</a>
+							<a href="#">celluar-submenu</a>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a href="./complex.html" id="packages">Пакеты услуг</a>
+					<div id="celluar-submenu" class="main-page-menu-submenu">
+						<div class="links">
+							<a href="#">packages-submenu</a>
+							<a href="#">packages-submenu</a>
+							<a href="#">packages-submenu</a>
+							<a href="#">packages-submenuи</a>
+							<a href="#">packages-submenu</a>
+							<a href="#">packages-submenu</a>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a href="./home-internet.html" id="internet">Интернет</a>
+					<div id="celluar-submenu" class="main-page-menu-submenu">
+						<div class="links">
+							<a href="#">internet-submenu</a>
+							<a href="#">internet-submenu</a>
+							<a href="#">internet-submenu</a>
+							<a href="#">internet-submenuи</a>
+							<a href="#">internet-submenu</a>
+							<a href="#">internet-submenu</a>
+						</div>
+					</div>
+				</div>	
+				<div class="dropdown">
+					<a href="./television.html" id="television">Телевидение</a>
+					<div id="celluar-submenu" class="main-page-menu-submenu">
+						<div class="links">
+							<a href="#">television-submenu</a>
+							<a href="#">television-submenu</a>
+							<a href="#">television-submenu</a>
+							<a href="#">television-submenuи</a>
+							<a href="#">television-submenu</a>
+							<a href="#">television-submenu</a>
+						</div>
+					</div>
+				</div>												
+				<div class="dropdown">
+					<a href="./telephony.html" id="telephony">Телефония</a>
+					<div id="celluar-submenu" class="main-page-menu-submenu">
+						<div class="links">
+							<a href="#">telephony-submenu</a>
+							<a href="#">telephony-submenu</a>
+							<a href="#">telephony-submenu</a>
+							<a href="#">telephony-submenuи</a>
+							<a href="#">telephony-submenu</a>
+							<a href="#">telephony-submenu</a>
+						</div>
+					</div>
+				</div>				
+
+				
+				
+				
 				<a href="tel:8 (843) 222-22-22" class="phone">(843) 222-22-22</a>
-			</div>
+			</div>									
 		</div>
 
 		<div id="main-slider">

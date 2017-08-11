@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>Таттелеком - Главная</title>
 	<script src="./libs/jquery.js"></script>
+	<script src="./libs/jquery-ui.min.js"></script>
 	<script src="./libs/jquery.bxslider/jquery.bxslider.min.js"></script>
 	<script src="./libs/select2/js/select2.full.min.js"></script>
 	<script src="./libs/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
@@ -97,7 +98,60 @@
 			</div>									
 		</div>
 	</div>
-	<div class="main-wrapper">
+
+	<div id="top-menu-mobile-content" style="display:none;">
+		<img src="./img/menu-close-icon-black.svg" id="top-menu-mobile-close">
+		<div class="content">
+
+			<h3>Мобильная связь</h3>
+			<div>
+				<a href="#">Мобильная связь</a>
+				<a href="#">Точки продаж</a>
+				<a href="#">Карта покрытия</a>
+				<a href="#">Роуминг по России</a>
+				<a href="#">Международный роуминг</a>
+				<a href="#">Вопросы и ответы</a>
+			</div>
+			<h3>Пакеты услуг</h3>
+			<div>
+				<a href="#">Мобильная связь</a>
+				<a href="#">Точки продаж</a>
+				<a href="#">Карта покрытия</a>
+				<a href="#">Роуминг по России</a>
+				<a href="#">Международный роуминг</a>
+				<a href="#">Вопросы и ответы</a>
+			</div>
+			<h3>Интернет</h3>
+			<div>
+				<a href="#">Мобильная связь</a>
+				<a href="#">Точки продаж</a>
+				<a href="#">Карта покрытия</a>
+				<a href="#">Роуминг по России</a>
+				<a href="#">Международный роуминг</a>
+				<a href="#">Вопросы и ответы</a>
+			</div>
+			<h3>Телевидение</h3>
+			<div>
+				<a href="#">Мобильная связь</a>
+				<a href="#">Точки продаж</a>
+				<a href="#">Карта покрытия</a>
+				<a href="#">Роуминг по России</a>
+				<a href="#">Международный роуминг</a>
+				<a href="#">Вопросы и ответы</a>
+			</div>
+			<h3>Телефония</h3>
+			<div>
+				<a href="#">Мобильная связь</a>
+				<a href="#">Точки продаж</a>
+				<a href="#">Карта покрытия</a>
+				<a href="#">Роуминг по России</a>
+				<a href="#">Международный роуминг</a>
+				<a href="#">Вопросы и ответы</a>
+			</div>						
+		</div>
+	</div>
+
+	<div class="main-wrapper" id="main-wrapper">
 		<div id="city-select-menu" style="display:none">
 			<div class="header">
 				<div class="left">
@@ -210,7 +264,7 @@
 			</div>
 		</header>
 
-		<div class="header-mobile">
+		<div class="header-mobile" id="header-mobile">
 			<div class="left">
 				<a href="#" class="top-menu-opener">
 					<span>Услуги для дома</span>
@@ -225,7 +279,7 @@
 			</div>
 		</div>
 
-		<div class="main-page-menu-mobile">
+		<div class="top-menu-mobile" id="top-menu-mobile">
 			<div class="left">
 				<img src="./img/logo.png" class="logo">
 			</div>
@@ -236,7 +290,7 @@
 			</div>
 		</div>
 
-		<div class="main-page-menu">
+		<div class="top-menu">
 			<div class="left">
 				<img src="./img/logo.png" class="logo">
 			</div>
@@ -244,7 +298,7 @@
 			<div class="right">
 				<div class="dropdown">
 					<a href="#" id="celluar">Мобильная связь</a>
-					<div id="celluar-submenu" class="main-page-menu-submenu">
+					<div id="celluar-submenu" class="top-menu-submenu">
 						<div class="links">
 							<a href="#">celluar-submenu</a>
 							<a href="#">celluar-submenu</a>
@@ -257,7 +311,7 @@
 				</div>
 				<div class="dropdown">
 					<a href="./complex.html" id="packages">Пакеты услуг</a>
-					<div id="celluar-submenu" class="main-page-menu-submenu">
+					<div id="celluar-submenu" class="top-menu-submenu">
 						<div class="links">
 							<a href="#">packages-submenu</a>
 							<a href="#">packages-submenu</a>
@@ -270,7 +324,7 @@
 				</div>
 				<div class="dropdown">
 					<a href="./home-internet.html" id="internet">Интернет</a>
-					<div id="celluar-submenu" class="main-page-menu-submenu">
+					<div id="celluar-submenu" class="top-menu-submenu">
 						<div class="links">
 							<a href="#">internet-submenu</a>
 							<a href="#">internet-submenu</a>
@@ -283,7 +337,7 @@
 				</div>	
 				<div class="dropdown">
 					<a href="./television.html" id="television">Телевидение</a>
-					<div id="celluar-submenu" class="main-page-menu-submenu">
+					<div id="celluar-submenu" class="top-menu-submenu">
 						<div class="links">
 							<a href="#">television-submenu</a>
 							<a href="#">television-submenu</a>
@@ -296,7 +350,7 @@
 				</div>												
 				<div class="dropdown">
 					<a href="./telephony.html" id="telephony">Телефония</a>
-					<div id="celluar-submenu" class="main-page-menu-submenu">
+					<div id="celluar-submenu" class="top-menu-submenu">
 						<div class="links">
 							<a href="#">telephony-submenu</a>
 							<a href="#">telephony-submenu</a>

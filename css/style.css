@@ -230,7 +230,7 @@ header > div.right > * {
     -ms-flex-pack: center;
     justify-content: center;
     letter-spacing: 0.05em;
-    font-family: 'Gilroy Medium';
+    font-family: 'Gilroy Regular';
 }
 header > div.right > *.connect {
     margin-left: 31px;
@@ -257,7 +257,7 @@ header > div.right > *.connect {
     top:3.90625vw;
     z-index:1;
     background:#ffffff;
-    
+    box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
 }
 
 
@@ -552,7 +552,7 @@ header > div.right > *.connect {
     color: #1c1c1c;
 }
 #main-slider li .slider-text h1 {
-    font-size: 58px;
+font-weight:100;    font-size: 58px;
     margin-bottom: 15px;
 }
 #main-slider li .slider-text p {
@@ -1032,7 +1032,7 @@ footer .very-footer > div.right {
     text-align: center;
 }
 #address-checking-banner .content h1 {
-    font-size: 2.55vw;
+font-weight:100;    font-size: 2.55vw;
     text-align: center;
     font-weight: 100;
     font-family: 'Gilroy Light';
@@ -1050,7 +1050,7 @@ footer .very-footer > div.right {
     border: 1px solid #ffffff;
     margin-left: 1vw;
     margin-right: 1vw;
-    font-family: 'Gilroy Medium';
+    font-family: 'Gilroy Regular';
     font-weight: 200;
     font-size: 0.833333vw;
     padding-left: 1vw;
@@ -1142,7 +1142,7 @@ footer .very-footer > div.right {
 }
 #plans-and-packets .tabs-and-navigation .left a {
     letter-spacing: 0.05em;
-    font-family: 'Gilroy Medium';
+    font-family: 'Gilroy Regular';
     margin-right: 1.5vw;
     color: #606060;
 }
@@ -1176,7 +1176,7 @@ footer .very-footer > div.right {
 }
 #plans-and-packets .actions .action .action-header {
     font-size: 2.60400vw;
-    font-family: 'Gilroy Medium';
+    font-family: 'Gilroy Regular';
     color: #0072ce;
     margin-bottom: 1.4vw;
 }
@@ -1202,7 +1202,7 @@ footer .very-footer > div.right {
 #plans-and-packets .actions .action .detail p {
     font-size: 0.99000vw;
     color: #0072ce;
-    font-family: 'Gilroy Medium';
+    font-family: 'Gilroy Regular';
     line-height: 1.66667;
     letter-spacing: 0.05000em;
 }
@@ -1219,7 +1219,7 @@ footer .very-footer > div.right {
 #plans-and-packets .actions .action .white-space .avalible {
     font-size: 0.93800vw;
     color: #1c1c1c;
-    font-family: 'Gilroy Medium';
+    font-family: 'Gilroy Regular';
     letter-spacing: 0.05em;
 }
 #plans-and-packets .actions .action .white-space .avalible:first-of-type {
@@ -1235,7 +1235,7 @@ footer .very-footer > div.right {
 #plans-and-packets .actions .action .white-space .price span.number {
     font-size: 2.86700vw;
     color: #0072ce;
-    font-family: 'Gilroy Medium';
+    font-family: 'Gilroy Regular';
     letter-spacing: 0.025em;
     font-weight: 100;
     margin-right: 0.3vw;
@@ -1402,7 +1402,7 @@ footer .very-footer > div.right {
 
 #complex-plans .tabs-and-navigation .left a {
     letter-spacing: 0.05em;
-    font-family: 'Gilroy Medium';
+    font-family: 'Gilroy Regular';
     margin-right: 1.5vw;
     color: #606060;
     font-size: 1.04200vw;
@@ -1486,7 +1486,7 @@ footer .very-footer > div.right {
     position:absolute;
     display:block;
     content:'+';
-    font-family:'Gilroy Medium';
+    font-family:'Gilroy Regular';
     font-size:1.82292vw;
     left:initial;
     right:0;
@@ -1537,7 +1537,7 @@ footer .very-footer > div.right {
 
 #complex-plans .complex-plans-content .complex-plan .white .left .column .column-title  {
     font-size:0.93750vw;
-    font-family:'Gilroy Medium';
+    font-family:'Gilroy Regular';
     letter-spacing:0.05000em;
     margin-bottom:1.3vw;
 }
@@ -1574,7 +1574,7 @@ footer .very-footer > div.right {
 
 #complex-plans .complex-plans-content .complex-plan .white .right .column2 .price .number {
     font-size:2.86458vw;
-    font-family:'Gilroy Medium';
+    font-family:'Gilroy Regular';
     letter-spacing:0.02500em;
     color:#0072ce;
 }
@@ -1990,6 +1990,53 @@ header > div.right > .button {
     margin:0 auto;
 }
 
+/*НОВОСТИ КНОПКА ЗАГРУЗИТЬ ЕЩЕ*/
+
+body.news #news .button {
+    border:none;
+    width:17.70833vw;
+    font-size:1.14583vw;
+    color:#606060;
+}
+
+body.news #news .button img {
+    vertical-align:middle;
+    width:50px;
+    margin-right:1.25000vw;
+    transition:1s ease;
+}
+
+body.news #news .button:hover img {
+    transform:rotate(360deg);
+}
+
+/*АКЦИИ*/
+
+.actions-style-1#special-offers .content .right .button {
+    border-color:#0072ce;
+    color:#0072ce;
+}
+
+.actions-style-2#special-offers .content .right .button {
+    border-color:#ffffff;
+    color:#ffffff;
+}
+
+.actions-style-3#special-offers .content {
+    margin-top:0;
+}
+
+.actions-style-3#special-offers .content p {
+    font-size:1.04167vw;
+}
+
+.actions-style-3#special-offers .content .left .button {
+    border:none;
+}
+
+.actions-style-3#special-offers .content .left .button span {
+    text-align:left;
+}
 
 @media (max-width: 875px) {
     .button {
@@ -2027,7 +2074,44 @@ header > div.right > .button {
     }
 }
 
+body.news #news {
+    position:relative;
+    padding-top:4.8vw;
+}
 
+body.news #news h2 {
+    font-size:2.60417vw;
+    margin-bottom:0;
+}
+
+body.news #news .top-row {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom:4vw;
+}
+
+body.news #news .dates-selector {
+    font-size:0.93750vw;
+    color:#606060;
+    font-family:'Gilroy SemiBold';
+    text-transform: uppercase;
+}
+
+body.news #news .dates-selector .select-month, body.news #news .dates-selector .select-year {
+    color:#1c1c1c;
+    cursor:pointer;
+    margin-left:0.7vw;
+}
+
+body.news #news .dates-selector img {
+    cursor:pointer;
+    width:0.72917vw;
+    margin-left:0.3vw;
+}
+
+body.news #news .dates-selector * {
+}
 
 @media all and (max-width: 1900px) {
     #special-offers .content p {
@@ -2104,7 +2188,7 @@ header > div.right > .button {
         margin-left: 16px;
     }
     #main-slider li .slider-text h1 {
-        font-size: 40px;
+font-weight:100;        font-size: 40px;
         margin-bottom: 10px;
     }
     #main-slider li .slider-text p {
@@ -2342,7 +2426,7 @@ header > div.right > *.connect {
 }
 
 #main-slider li .slider-text h1 {
-    font-size: 36px;
+font-weight:100;    font-size: 36px;
     margin-bottom: 6px;
 }
 
@@ -2413,7 +2497,7 @@ header > div.right > *.connect {
         margin-left: 11.84px;
     }
     #main-slider li .slider-text h1 {
-        font-size: 29.60px;
+font-weight:100;        font-size: 29.60px;
         margin-bottom: 7.40px;
     }
     #main-slider li .slider-text p {
@@ -2969,7 +3053,7 @@ header > div.right > *.connect {
         left: 11vw;
     }
     #main-slider-mobile ul li .content .slider-text h1 {
-        line-height: 1.45;
+font-weight:100;        line-height: 1.45;
         font-size: 7vw;
         font-family: 'Gilroy Light';
         font-weight: 100;
@@ -3044,7 +3128,7 @@ header > div.right > *.connect {
     #service-actions .service-action h3 {
         padding: 0;
         margin: 0;
-        font-family: 'Gilroy Medium';
+        font-family: 'Gilroy Regular';
         font-size: 6.65vw;
         margin-bottom: 3vw;
     }
@@ -3296,7 +3380,7 @@ header > div.right > *.connect {
     }
     #news .news-container .news-item .details h4 {
         font-size: 5.1vw;
-        font-family: 'Gilroy Medium';
+        font-family: 'Gilroy Regular';
         font-weight: 100;
         margin-top: 0;
         margin-bottom: 4.8vw;
@@ -3414,7 +3498,7 @@ header > div.right > *.connect {
         display: block;
     }
     #address-checking-banner .content h1 {
-        font-size: 7.33300vw;
+font-weight:100;        font-size: 7.33300vw;
         max-width: 72.26700vw;
         text-align: left;
         line-height: 1.45455;
@@ -3661,7 +3745,7 @@ header > div.right > *.connect {
 
     #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-title {
         font-size:6.66667vw;
-        font-family:'Gilroy Medium';
+        font-family:'Gilroy Regular';
         margin-bottom:3.1vw;
     }
 
@@ -3870,4 +3954,23 @@ header > div.right > *.connect {
         margin-bottom: 8.9vw;
     }
 
+
+    body.news #news h2 {
+        font-size: 7.35vw;
+        border-top: none;
+        padding-top: 7.3%;
+        font-family: 'Gilroy Regular';
+        margin-bottom: 9.6vw;
+    }
+
+    body.news #news .top-row {
+        display:block;
+    }
+
+    body.news #news .dates-selector {
+        font-size:3.5vw;
+    }
+    body.news #news .dates-selector img {
+        width: 3.72917vw;
+    }
 }

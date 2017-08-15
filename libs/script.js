@@ -4,8 +4,10 @@ $(document).ready(function() {
 
     /*MAIN MENU*/
 
-    $("#menu-sandwich").click(function() {
+    $("#menu-sandwich, #header-mobile .left").click(function() {
         $("#main-menu").show().addClass("visible");
+        $('#main-wrapper').height($('#main-menu').height());
+    	$('#main-wrapper').css('overflow', 'hidden');
     });
 
     $("#menu-close-button").click(function() {
@@ -15,6 +17,8 @@ $(document).ready(function() {
         });
 
         $("#main-menu").removeClass("visible");
+        $('#main-wrapper').css('height', 'auto');
+    	$('#main-wrapper').css('overflow', 'initial');
     });
 
     /*SUBMENUS*/
@@ -140,6 +144,14 @@ $(document).ready(function() {
 
     $('#city-select-menu .header .right').click(function() {
         $('#city-select-menu').hide();
+        $('#main-wrapper').css('height', 'auto');
+    	$('#main-wrapper').css('overflow', 'initial');
+    });
+
+    $('#city-chooser-icon-mobile').click(function() {
+    	$('#city-select-menu').show();
+    	$('#main-wrapper').height($('#header-mobile').height()+$('#top-menu-mobile').height()+$('#city-select-menu').height());
+    	$('#main-wrapper').css('overflow', 'hidden');
     });
 
     
@@ -157,4 +169,7 @@ $(document).ready(function() {
     	$('#main-wrapper').css('height', 'auto');
     	$('#main-wrapper').css('overflow', 'initial');
     });
+
+
+
 });

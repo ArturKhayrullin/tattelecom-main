@@ -1838,6 +1838,7 @@ header > div.right > .button {
 /*КНОПКА НА ГЛАВНОМ СЛАЙДЕРЕ*/
 
 #main-slider li .slider-text .button {
+    border-width:1px;
     width:15.36458vw;
     border-color:#6d6d6e;
 }

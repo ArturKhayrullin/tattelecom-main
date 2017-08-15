@@ -73,6 +73,8 @@ h2 {
     z-index:1000;
     color:#ffffff;
     opacity:0;
+    -webkit-transition:0.5s ease;
+    -o-transition:0.5s ease;
     transition:0.5s ease;
 }
 
@@ -279,9 +281,15 @@ header > div.right > *.connect {
     z-index:100;
     background:#ffffff;
     height:5.52083vw;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: flex-end;
-    align-items:center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     left:0;
     right:0;
     border-top:1px solid #d2d2d2;
@@ -291,19 +299,29 @@ header > div.right > *.connect {
 }
 
 .top-menu .dropdown:hover .top-menu-submenu {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
 }
 
 .top-menu .right {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     height:100%;
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 
 .top-menu .right .dropdown {
     height:100%;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 
 #city-select-menu {
@@ -313,17 +331,26 @@ header > div.right > *.connect {
     background:#ffffff;
     top:3.90625vw;
     left:50%;
-    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+        -ms-transform:translateX(-50%);
+            transform:translateX(-50%);
     z-index:2;
-    box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
+    -webkit-box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
+            box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
     padding: 3.45833vw 3.37292vw;
     
 }
 
 #city-select-menu .header {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: space-between;
-    align-items:center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     margin-bottom:4.6vw;
 }
 
@@ -335,7 +362,8 @@ header > div.right > *.connect {
 
 #city-select-menu .header .right img {
     width:1.77083vw;
-    filter:invert(100%);
+    -webkit-filter:invert(100%);
+            filter:invert(100%);
     margin-left:0.93750vw;
 }
 
@@ -344,16 +372,26 @@ header > div.right > *.connect {
     font-size:0.93750vw;
     text-transform: uppercase;
     font-family:'Gilroy SemiBold';
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 
 #city-select-menu .selection-block {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #city-select-menu .selection-block .left {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
 }
 
@@ -393,6 +431,8 @@ header > div.right > *.connect {
 }
 
 #city-select-menu .selection-block  .right .city-select-btn {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     margin:0 auto;
     width:11.04167vw;
@@ -401,8 +441,12 @@ header > div.right > *.connect {
     font-size:0.93750vw;
     color:#1c1c1c;
     font-family:'Gilroy SemiBold';
-    justify-content: center;
-    align-items:center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     text-transform:uppercase;
     letter-spacing:0.05000em;
 
@@ -452,7 +496,9 @@ header > div.right > *.connect {
     position:absolute;
     top:50%;
     right:6.06695%;
-    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+        -ms-transform:translateY(-50%);
+            transform:translateY(-50%);
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
@@ -465,18 +511,24 @@ header > div.right > *.connect {
     background-size:cover;
     top:0;
     left:0;
+    -webkit-transition:.3s;
+    -o-transition:.3s;
     transition:.3s;
 }
 
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+        -ms-transform:rotate(180deg);
+            transform:rotate(180deg);
 }
 
 .nicescroll-rails {
     left:auto !important;
     right:4.57380% !important;
     height:100%;
-    transform:scaleY(0.9);
+    -webkit-transform:scaleY(0.9);
+        -ms-transform:scaleY(0.9);
+            transform:scaleY(0.9);
 
 }
 
@@ -821,10 +873,10 @@ header > div.right > *.connect {
 }
 #news .news-container .news-item .image {
     margin-right: 3.1%;
-    /*	width:774px;*/
+    /*  width:774px;*/
     
     width: 28%;
-    /*	margin-right:6.3%;*/
+    /*  margin-right:6.3%;*/
     
     margin-left: 6.3%;
 }
@@ -1318,30 +1370,30 @@ footer .very-footer > div.right {
 /*COMPLEX*/
 
 #complex-plans {
-	padding:0% 5.5%;
-	margin-top:4.6vw;
-	padding-bottom:3.7vw;
+    padding:0% 5.5%;
+    margin-top:4.6vw;
+    padding-bottom:3.7vw;
 }
 
 #complex-plans h2 {
-	font-size:2.60417vw;
-	letter-spacing:0;
-	font-family:'Gilroy Regular';
-	color:#1c1c1c;
-	margin-bottom:1.2vw;
+    font-size:2.60417vw;
+    letter-spacing:0;
+    font-family:'Gilroy Regular';
+    color:#1c1c1c;
+    margin-bottom:1.2vw;
 }
 
 #complex-plans .complex-plans-description {
-	line-height:1.41667;
-	letter-spacing:0;
-	color:#606060;
-	font-size:1.25000vw;
-	max-width:58.38500vw;
-	margin-bottom:3vw;
+    line-height:1.41667;
+    letter-spacing:0;
+    color:#606060;
+    font-size:1.25000vw;
+    max-width:58.38500vw;
+    margin-bottom:3vw;
 }
 
 #complex-plans .tabs-and-navigation {
-	margin-bottom:2.8vw;
+    margin-bottom:2.8vw;
 }
 
 #complex-plans .tabs-and-navigation .left a {
@@ -1357,210 +1409,235 @@ footer .very-footer > div.right {
 }
 
 #complex-plans .complex-plans-content .complex-plan > div {
-	padding:0% 2.81250vw;
+    padding:0% 2.81250vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray {
-	background:#f9f9f9;
-	padding-top:2.3vw;
-	padding-bottom:2.3vw;
+    background:#f9f9f9;
+    padding-top:2.3vw;
+    padding-bottom:2.3vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white {
-	background:#ffffff;
-	padding-top:2.3vw;
-	padding-bottom:2.3vw;
+    background:#ffffff;
+    padding-top:2.3vw;
+    padding-bottom:2.3vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-title {
-	font-size:2.60417vw;
-	letter-spacing:0.025em;
-	color:#0072ce;
-	font-family:'Gilroy Regular';
-	font-weight:100;
-	margin-bottom:0.9vw;
+    font-size:2.60417vw;
+    letter-spacing:0.025em;
+    color:#0072ce;
+    font-family:'Gilroy Regular';
+    font-weight:100;
+    margin-bottom:0.9vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-description {
-	font-size:1.19792vw;
-	letter-spacing:0.045em;
-	color:#1c1c1c;
-	margin-bottom:2vw;
+    font-size:1.19792vw;
+    letter-spacing:0.045em;
+    color:#1c1c1c;
+    margin-bottom:2vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization:after {
-	display:block;
-	content:'';
-	clear:both;
+    display:block;
+    content:'';
+    clear:both;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option {
-	float:left;
-	position:relative;
+    float:left;
+    position:relative;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option:nth-of-type(1) {
-	width:17.65625vw;
+    width:17.65625vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option:nth-of-type(2)  {
-	width:24.06250vw;
+    width:24.06250vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option:nth-of-type(2) * {
-	left:4.9vw;
-	position:relative;
+    left:4.9vw;
+    position:relative;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option:nth-of-type(3)  {
-	width:23.54167vw;
+    width:23.54167vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option:nth-of-type(3) * {
-	left:6.1vw;
-	position:relative;
+    left:6.1vw;
+    position:relative;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option:nth-of-type(4) * {
-	left:4.7vw;
-	position:relative;
+    left:4.7vw;
+    position:relative;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option:after {
-	position:absolute;
-	display:block;
-	content:'+';
-	font-family:'Gilroy Medium';
-	font-size:1.82292vw;
-	left:initial;
-	right:0;
-	top:50%;
-	transform:translate(50%,-50%);
-	color:#0072ce;
+    position:absolute;
+    display:block;
+    content:'+';
+    font-family:'Gilroy Medium';
+    font-size:1.82292vw;
+    left:initial;
+    right:0;
+    top:50%;
+    -webkit-transform:translate(50%,-50%);
+        -ms-transform:translate(50%,-50%);
+            transform:translate(50%,-50%);
+    color:#0072ce;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option:last-of-type:after {
-	display:none;
+    display:none;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option img {
-	height:3.12500vw;
-	
-	margin-bottom:1.7vw;
+    height:3.12500vw;
+    
+    margin-bottom:1.7vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option p {
-	font-family:'Gilroy SemiBold';
-	line-height:1.88889;
-	color:#0072ce;
-	letter-spacing:0.05000em;
-	font-size:0.93750vw;
-	text-transform: uppercase;
+    font-family:'Gilroy SemiBold';
+    line-height:1.88889;
+    color:#0072ce;
+    letter-spacing:0.05000em;
+    font-size:0.93750vw;
+    text-transform: uppercase;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white {
-	display:flex;
-	justify-content: space-between;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white > div {
-	display:flex;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white .left > div {
-	width:16.66667vw;
+    width:16.66667vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white .left .column .column-title  {
-	font-size:0.93750vw;
-	font-family:'Gilroy Medium';
-	letter-spacing:0.05000em;
-	margin-bottom:1.3vw;
+    font-size:0.93750vw;
+    font-family:'Gilroy Medium';
+    letter-spacing:0.05000em;
+    margin-bottom:1.3vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white .left .column .column-option {
-	font-size:1.14583vw;
-	font-family:'Gilroy Regular';
-	letter-spacing:0;
-	margin-bottom:0.6vw;
+    font-size:1.14583vw;
+    font-family:'Gilroy Regular';
+    letter-spacing:0;
+    margin-bottom:0.6vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white .right .column {
-	display:flex;
-	flex-direction: column;
-	height:100%;
-	justify-content: flex-end;
-	align-items:flex-end;
-	margin-left:1.40625vw;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height:100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align:end;
+        -ms-flex-align:end;
+            align-items:flex-end;
+    margin-left:1.40625vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white .right .column2 .price {
-	top: -12%;
+    top: -12%;
     position: relative;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white .right .column2 .price .number {
-	font-size:2.86458vw;
-	font-family:'Gilroy Medium';
-	letter-spacing:0.02500em;
-	color:#0072ce;
+    font-size:2.86458vw;
+    font-family:'Gilroy Medium';
+    letter-spacing:0.02500em;
+    color:#0072ce;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white .right .column2 {
-	justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white .right .column2 .price .number-description {
-	color:#1c1c1c;
-	letter-spacing:0.02500em;
-	font-size:1.14583vw;
+    color:#1c1c1c;
+    letter-spacing:0.02500em;
+    font-size:1.14583vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white .right .button {
-	font-size:0.93750vw;
-	font-family:'GIlroy SemiBold';
-	letter-spacing:0.05000em;
-	display:flex;
-	align-items:center;
-	justify-content: center;
-	height:3.33333vw;
+    font-size:0.93750vw;
+    font-family:'GIlroy SemiBold';
+    letter-spacing:0.05000em;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height:3.33333vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white .right .column1 .button {
-	background:#ffffff;
-	border:1px solid #0072ce;
-	color:#0072ce;
-	width:13.17708vw;
+    background:#ffffff;
+    border:1px solid #0072ce;
+    color:#0072ce;
+    width:13.17708vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan .white .right .column2 .button {
-	background:#0072ce;
-	color:#ffffff;
-	width:14.47917vw;
+    background:#0072ce;
+    color:#ffffff;
+    width:14.47917vw;
 }
 
 #complex-plans .complex-plans-content .complex-plan {
-	margin-bottom:2.8vw;
+    margin-bottom:2.8vw;
 }
 
 #complex-plans .complex-plans-content {
-	margin-bottom:4vw;
+    margin-bottom:4vw;
 }
 
 #complex-plans .complex-plans-pagination {
-	text-align:center;
-	font-size:1.04167vw;
-	color:#606060;
-	font-family:'Gilroy SemiBold';
-	letter-spacing:0.05000em;
+    text-align:center;
+    font-size:1.04167vw;
+    color:#606060;
+    font-family:'Gilroy SemiBold';
+    letter-spacing:0.05000em;
 }
 
 #complex-plans .complex-plans-pagination a {
-	margin:0vw 0.35vw;
+    margin:0vw 0.35vw;
 }
 
 #complex-plans .complex-plans-pagination a.active {
-	color:#1c1c1c;
+    color:#1c1c1c;
 }
 
 #top-menu-mobile-content {
@@ -1575,9 +1652,15 @@ footer .very-footer > div.right {
 
 .home-letai .people-count-block {
     height:8.54167vw;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items:center;
-    justify-content:space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
     padding:0% 5.5%;
     border-top:1px solid #d2d2d2;
 }
@@ -1674,7 +1757,8 @@ footer .very-footer > div.right {
 
 
 #useful-information {
-    box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
+    -webkit-box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
+            box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
     margin-top:6vw;
     padding:2.8%;
     padding-bottom:4.7%;
@@ -1809,7 +1893,9 @@ footer .very-footer > div.right {
     display:block;
     top:50%;
     width:100%;
-    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+        -ms-transform:translateY(-50%);
+            transform:translateY(-50%);
     text-transform: uppercase;
     letter-spacing:0.05em;
     font-family:'Gilroy SemiBold'; 
@@ -2688,7 +2774,8 @@ header > div.right > *.connect {
         bottom:0;
         top:29.30000vw;
         min-height:250.66667vw;
-        box-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
         padding:9.46667vw 11vw;
         position:absolute;
         padding-right:9vw;
@@ -2705,8 +2792,13 @@ header > div.right > *.connect {
         width:7.33333vw;
     }
     #city-select-menu .selection-block {
-        flex-direction:column;
-        align-items:center;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
         
     }
 
@@ -2716,7 +2808,8 @@ header > div.right > *.connect {
 
     #city-select-menu .selection-block .left {
         width:100%;
-        flex-wrap:wrap;
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
         margin-bottom: 8.6vw;
     }
 
@@ -3490,14 +3583,16 @@ header > div.right > *.connect {
         overflow: initial;
     }
     #special-offers.home-internet-special-offers .content a.button {
-	    position: absolute;
-	    bottom: 13%;
-	    left: 1.556vw;
-	    transform: none;
-	    width: 53vw;
-	    height: 11.3vw;
-	    padding-left: 14%;
-	    padding-top: 6%;
+        position: absolute;
+        bottom: 13%;
+        left: 1.556vw;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        width: 53vw;
+        height: 11.3vw;
+        padding-left: 14%;
+        padding-top: 6%;
     }
     #special-offers.home-internet-special-offers .content .right {
         display: none;
@@ -3540,144 +3635,162 @@ header > div.right > *.connect {
     /*COMPLEX MOBILE*/
 
     #complex-plans {
-    	border-top:2px solid #a0a0a0;
-    	margin-top:1vw;
-    	padding:0% 11.1%;
-    	padding-top:11.8vw;
-    	margin-bottom:19vw;
+        border-top:2px solid #a0a0a0;
+        margin-top:1vw;
+        padding:0% 11.1%;
+        padding-top:11.8vw;
+        margin-bottom:19vw;
     }
 
     #complex-plans h2 {
-    	font-size:6.66667vw;
-    	line-height:1.55455;
-    	font-family:'Gilroy Regular';
-    	letter-spacing:0.05000em;
-    	max-width:98%;
-    	margin-bottom:4.3vw;
+        font-size:6.66667vw;
+        line-height:1.55455;
+        font-family:'Gilroy Regular';
+        letter-spacing:0.05000em;
+        max-width:98%;
+        margin-bottom:4.3vw;
     }
 
     #complex-plans .complex-plans-description {
-    	font-family:'Gilroy Regular';
-    	font-size:4.66667vw;
-    	line-height:1.49;
-    	letter-spacing:0.05000em;
-    	max-width:none;
+        font-family:'Gilroy Regular';
+        font-size:4.66667vw;
+        line-height:1.49;
+        letter-spacing:0.05000em;
+        max-width:none;
         margin-bottom:12vw;
     }
 
     #complex-plans .tabs-and-navigation {
-    	display:none;
+        display:none;
     }
 
     #complex-plans .complex-plans-content .complex-plan > div {
-    	padding:0vw 5.70000vw;
-    	
+        padding:0vw 5.70000vw;
+        
     }
 
     #complex-plans .complex-plans-content .complex-plan .gray {
-    	padding-top:3.9vw;
+        padding-top:3.9vw;
     }
 
     #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-title {
-    	font-size:6.66667vw;
-    	font-family:'Gilroy Medium';
-    	margin-bottom:3.1vw;
+        font-size:6.66667vw;
+        font-family:'Gilroy Medium';
+        margin-bottom:3.1vw;
     }
 
     #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-description {
-    	font-size:4.00000vw;
-    	line-height:1.5;
-    	letter-spacing:0.02500em;
-    	margin-bottom:7.7vw;
+        font-size:4.00000vw;
+        line-height:1.5;
+        letter-spacing:0.02500em;
+        margin-bottom:7.7vw;
     }
 
     #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option {
-    	width:100% !important;
-    	float:none;
-    	display:flex;
-    	align-items:center;
-    	margin-bottom:5.8vw;
-    	
+        width:100% !important;
+        float:none;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+        margin-bottom:5.8vw;
+        
     }
 
     #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option * {
-    	left:0 !important;
+        left:0 !important;
     }
 
     #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option:after {
-    	display:none;
+        display:none;
     }
 
     #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option img {
-    	margin-bottom:0;
-    	width:9.06667vw;
-    	height:auto;
-    	margin-right:5.2vw;
+        margin-bottom:0;
+        width:9.06667vw;
+        height:auto;
+        margin-right:5.2vw;
     }
 
     #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option p {
-    	font-size:2.66667vw;
-    	line-height:1.50000;
-    	letter-spacing:0.05000em;
+        font-size:2.66667vw;
+        line-height:1.50000;
+        letter-spacing:0.05000em;
     }
 
     #complex-plans .complex-plans-content .complex-plan .white .left {
-    	display:none;
+        display:none;
     }
 
     #complex-plans .complex-plans-content .complex-plan .white > div {
-    	width:100%;
-    	justify-content: flex-start;
-    	align-items:center;
-    	flex-direction: column-reverse;
+        width:100%;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
 
     #complex-plans .complex-plans-content .complex-plan .white .right .column {
-    	height:auto;
-    	flex-direction: column;
-    	align-items:center;
-    	justify-content: flex-start;
+        height:auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
 
     #complex-plans .complex-plans-content .complex-plan .white .right .column2 .price {
-    	top:initial;
-    	margin-bottom:3.8vw;
+        top:initial;
+        margin-bottom:3.8vw;
     }
 
     #complex-plans .complex-plans-content .complex-plan .white .right .column2 .price .number {
-    	font-size:8.61733vw;
-    	margin-right:1vw;
+        font-size:8.61733vw;
+        margin-right:1vw;
     }
 
     #complex-plans .complex-plans-content .complex-plan .white .right .column2 .price .number-description {
-    	font-size:3.97733vw;
+        font-size:3.97733vw;
     }
 
     #complex-plans .complex-plans-content .complex-plan .white .right .button {
-    	font-size:3.24933vw;
+        font-size:3.24933vw;
     }
 
     #complex-plans .complex-plans-content .complex-plan .white .right .column2 .button,
     #complex-plans .complex-plans-content .complex-plan .white .right .column1 .button {
-    	width:53.33333vw;
-    	height:12.00000vw;
-    	border:none;
+        width:53.33333vw;
+        height:12.00000vw;
+        border:none;
     }
 
     #complex-plans .complex-plans-content .complex-plan .white {
-    	padding-top:3.9vw;
+        padding-top:3.9vw;
     }
 
     #complex-plans .complex-plans-content .complex-plan {
-    	margin-bottom:13.1vw;
+        margin-bottom:13.1vw;
     }
 
     #complex-plans .complex-plans-content .complex-plan .gray .complex-plan-visualization .option:nth-of-type(n+3) {
-    	display:none;
+        display:none;
     }
 
     #complex-plans .complex-plans-pagination {
-    	display:none;
+        display:none;
     }
 
     /*LETAI MOBILE*/

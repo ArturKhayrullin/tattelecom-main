@@ -1864,6 +1864,14 @@ header > div.right > .button {
 
 /*СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ*/
 
+#special-offers .content .left {
+    height:100%;
+}
+
+#special-offers .content .right {
+    height:100%;
+}
+
 #special-offers .content .left .button {
     width:14.58333vw;
     border-color:#ffffff;

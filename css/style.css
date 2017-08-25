@@ -205,6 +205,15 @@ header > div.left > * {
 header > div.right > * {
     margin-left: 26px;
 }
+
+header > div.left > *:hover, header > div.right > *:hover {
+    color:#e74625;
+}
+
+.home-letai header > div.left > *:hover, .home-letai header > div.right > *:hover {
+    color:#0072ce;
+}
+
 .city-chooser,
 .dashboard,
 .connect {
@@ -260,6 +269,9 @@ header > div.right > *.connect {
     box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
 }
 
+.top-menu .left img:hover {
+    cursor:pointer;
+}
 
 
 .top-menu-mobile {
@@ -271,6 +283,16 @@ header > div.right > *.connect {
 .top-menu a:hover {
     color: #0072ce;
 }
+
+.top-menu .right .dropdown:hover > a {
+    color:#0072ce;
+    
+}
+
+.top-menu .right .dropdown:hover {
+    cursor:pointer;
+}
+
 .top-menu a.phone {
     font-size: 33px;
 }
@@ -706,6 +728,10 @@ font-weight:100;    font-size: 58px;
     box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
     margin-bottom: 90px;
 }
+
+#services-for-home .services-container .services-for-home-service:hover {
+    box-shadow: 0px 0px 17.4px 2.6px rgba(0, 114, 206, 0.35);
+}
 #services-for-home .services-container .services-for-home-service > * {
     padding: 0px 21px;
 }
@@ -739,13 +765,13 @@ font-weight:100;    font-size: 58px;
     font-size: 18px;
     letter-spacing: 0.05em;
 }
-#special-offers {
+.special-offers-block {
     margin-bottom: 78px;
 }
-#special-offers img {
+.special-offers-block img {
     max-width: 100%;
 }
-#special-offers .content {
+.special-offers-block .content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -756,38 +782,44 @@ font-weight:100;    font-size: 58px;
     margin-top: -328px;
     height: 390px;
 }
-#special-offers .content .left {
+.special-offers-block .content .left {
     width: 536px;
     background: #0072ce;
     width: 31.5%;
 }
-#special-offers .content .right {
+.special-offers-block .content .right {
     width: 1120px;
     background: #ffffff;
     width: 65.5%;
 }
-#special-offers .content > div {
+.special-offers-block .content > div {
     padding: 39px 51px;
     -webkit-box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
     box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
     padding-bottom: 0;
+    transition:0.1s;
 }
-#special-offers .content .left {
+
+.special-offers-block .content > div:hover {
+    box-shadow: 0px 0px 17.4px 2.6px rgba(0, 114, 206, 0.5);
+
+}
+.special-offers-block .content .left {
     color: #ffffff;
 }
-#special-offers .content h4 {
+.special-offers-block .content h4 {
     font-size: 38px;
     font-weight: 100;
     max-width: 550px;
     margin-bottom: 19px;
 }
-#special-offers .content p {
+.special-offers-block .content p {
     margin-bottom: 83px;
     font-size: 22px;
     letter-spacing: 0.02em;
     line-height: 1.45;
 }
-#special-offers .content a.button {
+.special-offers-block .content a.button {
     display: inline-block;
     border: 1px solid #ffffff;
     padding: 20px 35px;
@@ -797,23 +829,23 @@ font-weight:100;    font-size: 58px;
     bottom: 8.3%;
     font-family: 'Gilroy SemiBold';
 }
-#special-offers .content .special-offers-content-wrapper {
+.special-offers-block .content .special-offers-content-wrapper {
     height: 100%;
     position: relative;
 }
-#special-offers .content .right a.button {
+.special-offers-block .content .right a.button {
     border: 1px solid #e74625;
     color: #e74625;
 }
-#special-offers .special-offers-slider-controls {
+.special-offers-block .special-offers-slider-controls {
     position: absolute;
-    right: -1%;
+    right: 0%;
     bottom: 15%;
 }
 .special-offers-slider-controls-mobile {
     display: none;
 }
-#special-offers .content .left {
+.special-offers-block .content .left {
     position: relative;
 }
 #news {
@@ -971,12 +1003,21 @@ footer .footer-links > div a {
     display: block;
     margin-bottom: 20px;
 }
+
+footer .footer-links > div a:hover {
+    color:#e74726;
+}
 footer .footer-links > div.socials a {
     display: inline;
     margin-right: 16px;
 }
 footer .footer-links > div.socials a img {
     vertical-align: middle;
+    transition:0.2s;
+}
+
+footer .footer-links > div.socials a img:hover {
+    transform:scale(1.1);
 }
 footer .footer-links > div.socials div {
     margin-bottom: 40px;
@@ -1054,9 +1095,16 @@ font-weight:100;    font-size: 2.55vw;
     font-weight: 200;
     font-size: 0.833333vw;
     padding-left: 1vw;
+    color:#ffffff;
 }
-#address-checking-banner .content input[type="text"]::-webkit-input-placeholder {
+#address-checking-banner .content input::-webkit-input-placeholder {
     color: #ffffff;
+    opacity:1;
+}
+
+#address-checking-banner .content input::-moz-placeholder {
+    color: #ffffff;
+    opacity:1;
 }
 #address-checking-banner .content #city {
     width: 20vw;
@@ -1161,12 +1209,21 @@ font-weight:100;    font-size: 2.55vw;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+
+#plans-and-packets .actions .actions-wrapper {
+    display:flex;
+    justify-content: space-between;
+}
 #plans-and-packets .actions .action {
     width: 31.3%;
     position: relative;
     background: #f9f9f9;
     -webkit-box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
     box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
+}
+
+#plans-and-packets .actions .action:hover {
+    box-shadow:0px 0px 17.4px 2.6px rgba(0, 114, 206, 0.2);
 }
 #plans-and-packets .actions .action > div {
     padding: 0% 2.2vw;
@@ -1273,32 +1330,32 @@ font-weight:100;    font-size: 2.55vw;
     font-family: 'Gilroy SemiBold';
     color: #0072ce;
 }
-#special-offers.home-internet-special-offers {
+.special-offers-block.home-internet-special-offers {
     margin-bottom: 5.5vw;
 }
-#special-offers.home-internet-special-offers .content {
+.special-offers-block.home-internet-special-offers .content {
     margin-top: 0;
     height: 21.9vw;
 }
-#special-offers.home-internet-special-offers h2 {
+.special-offers-block.home-internet-special-offers h2 {
     font-size: 2.29200vw;
     letter-spacing: 0;
     font-family: 'Gilroy Regular';
     padding: 0% 6%;
     margin-bottom: 2.4vw;
 }
-#special-offers.home-internet-special-offers .content .left h4 {
+.special-offers-block.home-internet-special-offers .content .left h4 {
     max-width: 68%;
 }
-#special-offers.home-internet-special-offers .content .left {
+.special-offers-block.home-internet-special-offers .content .left {
     background: url(../img/home-internet/special-offers-left-bg.jpg);
     background-size: cover;
 }
-#special-offers.home-internet-special-offers .content .right {
+.special-offers-block.home-internet-special-offers .content .right {
     background: url(../img/home-internet/special-offers-right-bg.jpg);
     background-size: cover;
 }
-#special-offers.home-internet-special-offers .content .right .expire {
+.special-offers-block.home-internet-special-offers .content .right .expire {
     font-size: 0.93750vw;
     color: #ffffff;
     position: absolute;
@@ -1307,14 +1364,14 @@ font-weight:100;    font-size: 2.55vw;
     left: 38%;
     bottom: 14%;
 }
-#special-offers.home-internet-special-offers .content .right h4 {
+.special-offers-block.home-internet-special-offers .content .right h4 {
     max-width: 95%;
     color: #ffffff;
 }
-#special-offers.home-internet-special-offers .content .right p {
+.special-offers-block.home-internet-special-offers .content .right p {
     color: #ffffff;
 }
-#special-offers.home-internet-special-offers .content .right a.button {
+.special-offers-block.home-internet-special-offers .content .right a.button {
     border-color: #ffffff;
     color: #ffffff;
 }
@@ -1618,6 +1675,7 @@ font-weight:100;    font-size: 2.55vw;
     background:#0072ce;
     color:#ffffff;
     width:14.47917vw;
+    border:none;
 }
 
 #complex-plans .complex-plans-content .complex-plan {
@@ -1814,7 +1872,7 @@ font-weight:100;    font-size: 2.55vw;
     width:27%;
 }
 
-.home-letai #special-offers.home-internet-special-offers {
+.home-letai .special-offers-block.home-internet-special-offers {
     margin-bottom:4%;
 }
 
@@ -1871,10 +1929,14 @@ font-weight:100;    font-size: 2.55vw;
 #map-coverage-letai .button-wrapper .button {
     border-color:#e74625;
     color:#e74625;
+    width:15vw;
 }
 
 #map-coverage-letai .button-wrapper {
     margin-bottom:4.6vw;
+    display:flex;
+    justify-content: center;
+    margin-top:4.6vw;
 }
 
 /*BUTTONS*/
@@ -1882,7 +1944,16 @@ font-weight:100;    font-size: 2.55vw;
 .button {
     position:relative;
     border:2px solid #000000;
-    font-size:0.93750vw;   
+    font-size:0.93750vw; 
+    transition:0.1s;  
+}
+
+.button:hover, button:hover,.apply-plan:hover,.request-connection:hover,.slider-button:hover {
+    transform:scale(1.05);
+}
+
+button,.apply-plan,.request-connection,.slider-button {
+    transition:0.2s;
 }
 
 .button-scaler {
@@ -1957,15 +2028,15 @@ header > div.right > .button {
 
 /*СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ*/
 
-#special-offers .content .left {
+.special-offers-block .content .left {
     height:100%;
 }
 
-#special-offers .content .right {
+.special-offers-block .content .right {
     height:100%;
 }
 
-#special-offers .content .left .button {
+.special-offers-block .content .left .button {
     width:14.58333vw;
     border-color:#ffffff;
     color:#ffffff;
@@ -1973,12 +2044,18 @@ header > div.right > .button {
     position:absolute;
 }
 
-#special-offers .content .right .button {
+.special-offers-block .content .right .button {
     width:15.92708vw;
     border-color:#e74625;
     color:#e74625;
     bottom:1.6vw;
     position:absolute;
+    left:1px;
+}
+
+.special-offers-block.home-internet-special-offers .content .right .button {
+    color:#ffffff;
+    border-color:#ffffff;
 }
 
 
@@ -2004,6 +2081,7 @@ body.news #news .button img {
     width:50px;
     margin-right:1.25000vw;
     transition:1s ease;
+    width:2.6vw;
 }
 
 body.news #news .button:hover img {
@@ -2012,36 +2090,61 @@ body.news #news .button:hover img {
 
 /*АКЦИИ*/
 
-.actions-style-1#special-offers .content .right .button {
+.actions-style-1.special-offers-block .content .right .button {
     border-color:#0072ce;
     color:#0072ce;
 }
 
-.actions-style-2#special-offers .content .right .button {
+.actions-style-2.special-offers-block .content .right .button {
     border-color:#ffffff;
     color:#ffffff;
 }
 
-.actions-style-3#special-offers .content {
+.actions-style-3.special-offers-block .content {
     margin-top:0;
 }
 
-.actions-style-3#special-offers .content p {
+.actions-style-3.special-offers-block .content p {
     font-size:1.04167vw;
 }
 
-.actions-style-3#special-offers .content .left .button {
+.actions-style-3.special-offers-block .content .left .button {
     border:none;
 }
 
-.actions-style-3#special-offers .content .left .button span {
+.actions-style-3.special-offers-block .content .left .button span {
     text-align:left;
 }
 
 @media (max-width: 875px) {
+
+    .special-offers-block .content > div:hover {
+        transform:none;
+    }
     .button {
         font-size:2.84267vw;
         border-color:#ffffff;
+    }
+
+    #map-coverage-letai .button-wrapper .button {
+        width:36vw;
+    }
+
+    #map-coverage-letai .button-wrapper {
+        margin:10vw 0vw;
+    }
+
+    #map-coverage-letai .legend span {
+        font-size:3vw;
+        white-space:nowrap;
+        line-height:2;
+
+    }
+
+    #map-coverage-letai .legend span:before {
+        width:2.78125vw;
+        height:2.78125vw;
+        margin-right: 2.12083vw;
     }
 
     #main-slider-mobile .button {
@@ -2061,9 +2164,9 @@ body.news #news .button:hover img {
         width:35.60000vw;
     }
 
-    #special-offers .content .left .button, #special-offers .content .right .button{
+    .special-offers-block .content .left .button, .special-offers-block .content .right .button{
         width: 14.58333vw;
-        bottom: 1.2vw;
+        bottom: 3.2vw;
         left: 50%;
         transform: translateX(-50%);
         width: 42vw;
@@ -2114,18 +2217,18 @@ body.news #news .dates-selector * {
 }
 
 @media all and (max-width: 1900px) {
-    #special-offers .content p {
+    .special-offers-block .content p {
         font-size: 18px;
     }
-    #special-offers .content h4 {
+    .special-offers-block .content h4 {
         font-size: 34px;
     }
 }
 @media all and (max-width: 1632px) {
-    #special-offers .content p {
+    .special-offers-block .content p {
         font-size: 14px;
     }
-    #special-offers .content h4 {
+    .special-offers-block .content h4 {
         font-size: 30px;
     }
 
@@ -2289,24 +2392,24 @@ font-weight:100;        font-size: 40px;
         padding: 0% 5.5%;
         margin-bottom: 33px;
     }
-    #special-offers .content {
+    .special-offers-block .content {
         margin-top: -239px;
         height: 276.9px;
     }
-    #special-offers .content > div {
+    .special-offers-block .content > div {
         padding: 27px 31px;
         padding-bottom: 0;
     }
-    #special-offers .content h4 {
+    .special-offers-block .content h4 {
         font-size: 27px;
         margin-bottom: 12px;
     }
-    #special-offers .content p {
+    .special-offers-block .content p {
         font-size: 14px;
         margin-bottom: 59px;
         line-height: 1.75;
     }
-    #special-offers .content a.button {
+    .special-offers-block .content a.button {
         display: inline-block;
         border: 1px solid #ffffff;
         padding: 14px 24px;
@@ -2314,17 +2417,17 @@ font-weight:100;        font-size: 40px;
         letter-spacing: 0.05em;
         left: 2px;
     }
-    #special-offers .special-offers-slider-controls {
+    .special-offers-block .special-offers-slider-controls {
         font-size: 12px;
         right: 4px;
         font-size: 13px;
         letter-spacing: -0.05em;
         font-family: 'Gilroy SemiBold';
     }
-    #special-offers .special-offers-slider-controls img {
+    .special-offers-block .special-offers-slider-controls img {
         width: 20px;
     }
-    #special-offers {
+    .special-offers-block {
         margin-bottom: 55px;
     }
     #news h2 {
@@ -2599,24 +2702,24 @@ font-weight:100;        font-size: 29.60px;
         padding: 0% 5.5%;
         margin-bottom: 24.42px;
     }
-    #special-offers .content {
+    .special-offers-block .content {
         margin-top: -176.86px;
         height: 204.91px;
     }
-    #special-offers .content > div {
+    .special-offers-block .content > div {
         padding: 19.98px 22.94px;
     }
-    #special-offers .content h4 {
+    .special-offers-block .content h4 {
         font-size: 19.98px;
         margin-bottom: 8.88px;
         max-width: 95%;
     }
-    #special-offers .content p {
+    .special-offers-block .content p {
         font-size: 10.36px;
         margin-bottom: 43.66px;
         line-height: 1.75;
     }
-    #special-offers .content a.button {
+    .special-offers-block .content a.button {
         display: inline-block;
         border: 1px solid #ffffff;
         padding: 10.36px 17.76px;
@@ -2624,17 +2727,17 @@ font-weight:100;        font-size: 29.60px;
         letter-spacing: 0.05em;
         left: 1px;
     }
-    #special-offers .special-offers-slider-controls {
+    .special-offers-block .special-offers-slider-controls {
         font-size: 8.88px;
         right: 2.96px;
         font-size: 9.62px;
         letter-spacing: -0.05em;
         font-family: 'Gilroy SemiBold';
     }
-    #special-offers .special-offers-slider-controls img {
+    .special-offers-block .special-offers-slider-controls img {
         width: 14.80px;
     }
-    #special-offers {
+    .special-offers-block {
         margin-bottom: 40.70px;
     }
     #news h2 {
@@ -2707,14 +2810,14 @@ font-weight:100;        font-size: 29.60px;
     }
 
 
-    #special-offers .content h4 {
+    .special-offers-block .content h4 {
         font-size: 16.98px;
         margin-bottom: 8.88px;
         max-width: 90%;
     }
 
 
-    #special-offers .content p {
+    .special-offers-block .content p {
         margin-bottom: 20px;
         max-width: 90%;
     }
@@ -3051,6 +3154,7 @@ font-weight:100;        font-size: 29.60px;
         position: absolute;
         top: 18.6vw;
         left: 11vw;
+        z-index:100;
     }
     #main-slider-mobile ul li .content .slider-text h1 {
 font-weight:100;        line-height: 1.45;
@@ -3237,40 +3341,40 @@ font-weight:100;        line-height: 1.45;
         align-items: center;
         font-size: 2.8vw;
     }
-    #special-offers > img {
+    .special-offers-block > img {
         display: none;
     }
-    #special-offers .content {
+    .special-offers-block .content {
         margin-top: 0;
         height: initial;
         display: block;
         padding: 0% 11%;
     }
-    #special-offers .content .left {
+    .special-offers-block .content .left {
         height: 61.20000vw;
     }
-    #special-offers .content .left,
-    #special-offers .content .right {
+    .special-offers-block .content .left,
+    .special-offers-block .content .right {
         width: 100%;
         padding: 6.5% 7%;
         padding-bottom: 7.4%;
     }
-    #special-offers .content h4 {
+    .special-offers-block .content h4 {
         font-size: 6vw;
         max-width: none;
         margin-bottom: 3.7vw;
         line-height: 1.2;
     }
-    #special-offers .content p {
-        font-size: 3.95vw;
+    .special-offers-block .content p {
+        font-size: 3.55vw !important;
         line-height: 1.5;
     }
-    #special-offers .content .left p {
+    .special-offers-block .content .left p {
         height: 12vw;
         overflow: hidden;
         margin-bottom: 10.3vw;
     }
-    #special-offers .content .left a.button {
+    .special-offers-block .content .left a.button {
         padding: 0;
         display: block;
         width: 41vw;
@@ -3281,25 +3385,25 @@ font-weight:100;        line-height: 1.45;
         padding-left: 5%;
         font-family: 'Gilroy SemiBold';
     }
-    #special-offers .content .right {
+    .special-offers-block .content .right {
         margin-top: 22vw;
         position: relative;
         height: 100vw;
     }
-    #special-offers .content .right h4 {
+    .special-offers-block .content .right h4 {
         font-size: 6vw;
         max-width: none;
         margin-bottom: 4.1vw;
         line-height: 1.2;
     }
-    #special-offers .content p {
+    .special-offers-block .content p {
         max-width: 100%;
     }
-    #special-offers .content .right p {
-        line-height: 1.55;
-        margin-bottom: 16.7vw;
+    .special-offers-block .content .right p, .actions-style-3.special-offers-block .content p {
+        line-height: 1.55 !important;
+        margin-bottom: 16.7vw !important;
     }
-    #special-offers .content .right a.button {
+    .special-offers-block .content .right a.button {
         display: block;
         margin: 0 auto;
         width: 49vw;
@@ -3310,22 +3414,22 @@ font-weight:100;        line-height: 1.45;
         padding-left: 4.7%;
         padding-top: 4.6%;
     }
-    #special-offers .content .right a.button,
-    #special-offers .content .left a.button {
+    .special-offers-block .content .right a.button,
+    .special-offers-block .content .left a.button {
         left: 50%;
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         bottom: 0;
     }
-    #special-offers {
+    .special-offers-block {
         position: relative;
         margin-bottom: 10vw;
     }
-    #special-offers .special-offers-slider-controls {
+    .special-offers-block .special-offers-slider-controls {
         display: none;
     }
-    #special-offers .special-offers-slider-controls.special-offers-slider-controls-mobile {
+    .special-offers-block .special-offers-slider-controls.special-offers-slider-controls-mobile {
         display: block;
         position: absolute;
         top: initial;
@@ -3337,13 +3441,13 @@ font-weight:100;        line-height: 1.45;
         font-size: 4vw;
         letter-spacing: -0.11em;
     }
-    #special-offers .special-offers-slider-controls img {
+    .special-offers-block .special-offers-slider-controls img {
         width: 5.1vw;
     }
-    #special-offers .special-offers-slider-controls img:first-of-type {
+    .special-offers-block .special-offers-slider-controls img:first-of-type {
         margin-right: 1vw;
     }
-    #special-offers .special-offers-slider-controls img:last-of-type {
+    .special-offers-block .special-offers-slider-controls img:last-of-type {
         margin-left: 1vw;
     }
     #news {
@@ -3400,7 +3504,22 @@ font-weight:100;        line-height: 1.45;
         margin: 0;
     }
     #news .button-centerer {
-        display: none;
+        margin-top:8vw;
+    }
+
+    #news .button-centerer .button {
+        width:47.72917vw;
+    }
+
+    body.news #news .button {
+        border: none;
+        width: 50vw;
+        font-size: 3.34583vw;
+        color: #606060;
+    }
+
+    body.news #news .button img {
+        width:7vw;
     }
     footer {
         padding: 0% 11%;
@@ -3540,13 +3659,18 @@ font-weight:100;        font-size: 7.33300vw;
         margin-bottom: 8.8vw;
     }
     #plans-and-packets .tabs-and-navigation .right {
-        display: none;
+        /*display: none;*/
+        margin-top:5vw;
+    }
+
+    #plans-and-packets .tabs-and-navigation .right .control-arrows img {
+        width:5vw;
     }
     #plans-and-packets .tabs-and-navigation {
         display: block;
         font-size: 2.66700vw;
         letter-spacing: 0.05em;
-        margin-bottom: 13.1vw;
+        margin-bottom: 3.1vw;
     }
     #plans-and-packets .tabs-and-navigation .left a {
         margin-right: 5.5vw;
@@ -3590,6 +3714,13 @@ font-weight:100;        font-size: 7.33300vw;
     #plans-and-packets .actions .action .detail p {
         font-size: 2.66700vw;
     }
+    .home-letai #plans-and-packets .actions .action .detail p {
+        font-size: 4vw;
+    }    
+
+    .home-letai #plans-and-packets .actions .action .detail img {
+        width:4.3vw;
+    }
     #plans-and-packets .actions .action .detail {
         margin-bottom: 6.5vw;
     }
@@ -3622,37 +3753,37 @@ font-weight:100;        font-size: 7.33300vw;
     #plans-and-packets .actions .action .white-space .full-terms {
         font-size: 3.24900vw;
     }
-    #special-offers.home-internet-special-offers {
+    .special-offers-block.home-internet-special-offers {
         padding: 0% 11%;
         margin-bottom: 15vw;
     }
-    #special-offers.home-internet-special-offers h2 {
+    .special-offers-block.home-internet-special-offers h2 {
         padding: 0;
         font-size: 7.33300vw;
         line-height: 1.45455;
         max-width: 90%;
         margin-bottom: 8.9vw;
     }
-    #special-offers.home-internet-special-offers .content {
+    .special-offers-block.home-internet-special-offers .content {
         padding: 0;
     }
-    #special-offers.home-internet-special-offers .content {
+    .special-offers-block.home-internet-special-offers .content {
         height: initial;
     }
-    #special-offers.home-internet-special-offers .content .left {
+    .special-offers-block.home-internet-special-offers .content .left {
         height: 83.46700vw;
         padding: 0% 7.30000%;
         padding-top: 10.6vw;
     }
-    #special-offers.home-internet-special-offers .content h4 {
+    .special-offers-block.home-internet-special-offers .content h4 {
         font-size: 6.66700vw;
     }
-    #special-offers.home-internet-special-offers .content .left p {
+    .special-offers-block.home-internet-special-offers .content .left p {
         font-size: 4.00000vw;
         height: auto;
         overflow: initial;
     }
-    #special-offers.home-internet-special-offers .content a.button {
+    .special-offers-block.home-internet-special-offers .content a.button {
         position: absolute;
         bottom: 13%;
         left: 1.556vw;
@@ -3664,9 +3795,27 @@ font-weight:100;        font-size: 7.33300vw;
         padding-left: 14%;
         padding-top: 6%;
     }
-    #special-offers.home-internet-special-offers .content .right {
-        display: none;
+    .special-offers-block.home-internet-special-offers .content .right {
+        /*display: none;*/
     }
+
+    .special-offers-block.home-internet-special-offers .content .right h4 {
+        font-size:5vw;
+    }
+
+    .special-offers-block.home-internet-special-offers .content .right .expire {
+        left:50%;
+        transform:translateX(-50%);
+        bottom:21%;
+        font-size:2.5vw;
+        white-space:nowrap;
+    }
+
+    .special-offers-block.actions-style-3 .right {
+        margin-bottom:10vw;
+    }
+
+
     #how-to-connect {
         padding: 0% 11%;
     }
@@ -3860,7 +4009,7 @@ font-weight:100;        font-size: 7.33300vw;
     }
 
     #complex-plans .complex-plans-pagination {
-        display:none;
+        font-size: 3.04167vw;
     }
 
     /*LETAI MOBILE*/
@@ -3883,7 +4032,7 @@ font-weight:100;        font-size: 7.33300vw;
 
     .home-letai .people-count-block .right {
         font-size: 4vw;
-        max-width: 23%;
+        max-width: 30%;
         text-align:right;
 
     }
@@ -3943,7 +4092,7 @@ font-weight:100;        font-size: 7.33300vw;
 
     #map-coverage-letai {
         padding:0% 11%;
-        display:none;
+        /*display:none;*/
     }
 
     #map-coverage-letai h2 {
@@ -3973,4 +4122,67 @@ font-weight:100;        font-size: 7.33300vw;
     body.news #news .dates-selector img {
         width: 3.72917vw;
     }
+
+
+}
+
+
+
+/*MAP*/
+
+#inverted-contain {
+    position: relative;
+}
+
+.map-view {
+    width: 100%;
+    overflow: hidden;
+    height: 755px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+.map-view {
+    height: 450px;
+}
+}
+
+@media screen and (max-width: 700px) {
+.map-view {
+    height: auto;
+}
+
+}
+
+#inverted-contain .panzoom {
+    width: 100%;
+}
+
+.buttons {
+    left: 3px;
+    top: 50%;
+    position: absolute;
+    transform:translateY(-50%);
+}
+
+.zoom-in, .zoom-out {
+    width: 28px;
+    height: 28px;
+    border-radius: 2px;
+    border: none;
+    background: #fff;
+    display: block;
+    outline: none;
+    color: #5c5c5c;
+    margin-top: 5px;
+    font-family: "FontfabricExtraBold";
+    font-size: 28px;
+    line-height: 32px;
+    transition: all 0.3s;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.zoom-out {
+    line-height: 27px;
 }

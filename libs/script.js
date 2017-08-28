@@ -151,7 +151,7 @@ $(document).ready(function() {
         });
 
     /*SELECTS*/
-    $('#district-selector, #town-selector').select2({
+    $('#district-selector, #town-selector, form select').select2({
         minimumResultsForSearch: Infinity
     }).on("select2:open", function() {
         $('.select2-results__options').niceScroll({
@@ -219,5 +219,34 @@ $(document).ready(function() {
             $(".news-container").append('<div class=\"news-item\">\r\n\t\t\t\t\t<div class=\"date\">\r\n\t\t\t\t\t\t<div class=\"day\">26<\/div>\r\n\t\t\t\t\t\t<div class=\"month\">\u043C\u0430\u044F<\/div>\r\n\t\t\t\t\t<\/div>\r\n\r\n\t\t\t\t\t<div class=\"image\">\r\n\t\t\t\t\t\t<img src=\".\/img\/news-image.jpg\">\r\n\t\t\t\t\t<\/div>\r\n\r\n\t\t\t\t\t<div class=\"date-mobile\">\r\n\t\t\t\t\t\t26.05.2017\r\n\t\t\t\t\t<\/div>\r\n\r\n\t\t\t\t\t<div class=\"details\">\r\n\t\t\t\t\t\t<h4>\u0422\u0430\u0442\u0442\u0435\u043B\u0435\u043A\u043E\u043C \u043F\u0440\u0438\u043D\u044F\u043B \u0443\u0447\u0430\u0441\u0442\u0438\u0435 \u0432 \u041A\u0430\u0437\u0430\u043D\u0441\u043A\u043E\u043C \u043C\u0430\u0440\u0430\u0444\u043E\u043D\u0435 \u0438 \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u0438\u043B \u0443\u0441\u043B\u0443\u0433\u0438 \u043E\u043D\u043B\u0430\u0439\u043D \u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u0438<\/h4>\r\n\t\t\t\t\t\t<p>25 \u043C\u0430\u044F \u0432 \u0433. \u0410\u043B\u044C\u043C\u0435\u0442\u044C\u0435\u0432\u0441\u043A\u0435 \u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443 \u0443\u043B. \u0428\u0435\u0432\u0447\u0435\u043D\u043A\u043E, 47 \u043E\u0442\u043A\u0440\u044B\u043B\u0441\u044F \u043D\u043E\u0432\u044B\u0439 \u043E\u0444\u0438\u0441 \u043F\u0440\u043E\u0434\u0430\u0436 \u0438 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F \u0422\u0430\u0442\u0442\u0435\u043B\u0435\u043A\u043E\u043C \u0438 \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u043E\u0439 \u0441\u0432\u044F\u0437\u0438 \u041B\u0435\u0442\u0430\u0439.<\/p>\r\n\t\t\t\t\t\t<a href=\"#\">\u0427\u0418\u0422\u0410\u0422\u042C \u0414\u0410\u041B\u0415\u0415<\/a>\r\n\t\t\t\t\t<\/div>\r\n\r\n\t\t\t\t<\/div><div class=\"news-item\">\r\n\t\t\t\t\t<div class=\"date\">\r\n\t\t\t\t\t\t<div class=\"day\">26<\/div>\r\n\t\t\t\t\t\t<div class=\"month\">\u043C\u0430\u044F<\/div>\r\n\t\t\t\t\t<\/div>\r\n\r\n\t\t\t\t\t<div class=\"image\">\r\n\t\t\t\t\t\t<img src=\".\/img\/news-image.jpg\">\r\n\t\t\t\t\t<\/div>\r\n\r\n\t\t\t\t\t<div class=\"date-mobile\">\r\n\t\t\t\t\t\t26.05.2017\r\n\t\t\t\t\t<\/div>\r\n\r\n\t\t\t\t\t<div class=\"details\">\r\n\t\t\t\t\t\t<h4>\u0422\u0430\u0442\u0442\u0435\u043B\u0435\u043A\u043E\u043C \u043F\u0440\u0438\u043D\u044F\u043B \u0443\u0447\u0430\u0441\u0442\u0438\u0435 \u0432 \u041A\u0430\u0437\u0430\u043D\u0441\u043A\u043E\u043C \u043C\u0430\u0440\u0430\u0444\u043E\u043D\u0435 \u0438 \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u0438\u043B \u0443\u0441\u043B\u0443\u0433\u0438 \u043E\u043D\u043B\u0430\u0439\u043D \u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u0438<\/h4>\r\n\t\t\t\t\t\t<p>25 \u043C\u0430\u044F \u0432 \u0433. \u0410\u043B\u044C\u043C\u0435\u0442\u044C\u0435\u0432\u0441\u043A\u0435 \u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443 \u0443\u043B. \u0428\u0435\u0432\u0447\u0435\u043D\u043A\u043E, 47 \u043E\u0442\u043A\u0440\u044B\u043B\u0441\u044F \u043D\u043E\u0432\u044B\u0439 \u043E\u0444\u0438\u0441 \u043F\u0440\u043E\u0434\u0430\u0436 \u0438 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F \u0422\u0430\u0442\u0442\u0435\u043B\u0435\u043A\u043E\u043C \u0438 \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u043E\u0439 \u0441\u0432\u044F\u0437\u0438 \u041B\u0435\u0442\u0430\u0439.<\/p>\r\n\t\t\t\t\t\t<a href=\"#\">\u0427\u0418\u0422\u0410\u0422\u042C \u0414\u0410\u041B\u0415\u0415<\/a>\r\n\t\t\t\t\t<\/div>\r\n\r\n\t\t\t\t<\/div><div class=\"news-item\">\r\n\t\t\t\t\t<div class=\"date\">\r\n\t\t\t\t\t\t<div class=\"day\">26<\/div>\r\n\t\t\t\t\t\t<div class=\"month\">\u043C\u0430\u044F<\/div>\r\n\t\t\t\t\t<\/div>\r\n\r\n\t\t\t\t\t<div class=\"image\">\r\n\t\t\t\t\t\t<img src=\".\/img\/news-image.jpg\">\r\n\t\t\t\t\t<\/div>\r\n\r\n\t\t\t\t\t<div class=\"date-mobile\">\r\n\t\t\t\t\t\t26.05.2017\r\n\t\t\t\t\t<\/div>\r\n\r\n\t\t\t\t\t<div class=\"details\">\r\n\t\t\t\t\t\t<h4>\u0422\u0430\u0442\u0442\u0435\u043B\u0435\u043A\u043E\u043C \u043F\u0440\u0438\u043D\u044F\u043B \u0443\u0447\u0430\u0441\u0442\u0438\u0435 \u0432 \u041A\u0430\u0437\u0430\u043D\u0441\u043A\u043E\u043C \u043C\u0430\u0440\u0430\u0444\u043E\u043D\u0435 \u0438 \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u0438\u043B \u0443\u0441\u043B\u0443\u0433\u0438 \u043E\u043D\u043B\u0430\u0439\u043D \u0442\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u0438<\/h4>\r\n\t\t\t\t\t\t<p>25 \u043C\u0430\u044F \u0432 \u0433. \u0410\u043B\u044C\u043C\u0435\u0442\u044C\u0435\u0432\u0441\u043A\u0435 \u043F\u043E \u0430\u0434\u0440\u0435\u0441\u0443 \u0443\u043B. \u0428\u0435\u0432\u0447\u0435\u043D\u043A\u043E, 47 \u043E\u0442\u043A\u0440\u044B\u043B\u0441\u044F \u043D\u043E\u0432\u044B\u0439 \u043E\u0444\u0438\u0441 \u043F\u0440\u043E\u0434\u0430\u0436 \u0438 \u043E\u0431\u0441\u043B\u0443\u0436\u0438\u0432\u0430\u043D\u0438\u044F \u0422\u0430\u0442\u0442\u0435\u043B\u0435\u043A\u043E\u043C \u0438 \u043C\u043E\u0431\u0438\u043B\u044C\u043D\u043E\u0439 \u0441\u0432\u044F\u0437\u0438 \u041B\u0435\u0442\u0430\u0439.<\/p>\r\n\t\t\t\t\t\t<a href=\"#\">\u0427\u0418\u0422\u0410\u0422\u042C \u0414\u0410\u041B\u0415\u0415<\/a>\r\n\t\t\t\t\t<\/div>\r\n\r\n\t\t\t\t<\/div>');
         });
         
+    });
+
+
+
+    $('.district-content').hide();
+    $('.district').click(function() {
+        $('.district').removeClass('active');
+        $(this).addClass('active');
+        $('.district-content').slideUp('fast');
+        $('#'+$(this).attr('id')+'-content').slideDown('fast', function() {
+            
+        });
+    });
+
+    $('.fourg-coverage-mobile .content').accordion();
+
+    $('.offices select').select2({
+        minimumResultsForSearch: Infinity
+    }).on("select2:open", function() {
+        $('.select2-results__options').niceScroll({
+            cursorcolor: "#666666",
+            autohidemode: false,
+            background: "rgba(0,0,0,0.2)",
+            cursorwidth: "4px",
+            cursorborder: "0",
+            cursorborderradius: "1px",
+            railoffset: 10,
+            dropdownCssClass: "no-borders-dropdown"
+        });
     });
 });

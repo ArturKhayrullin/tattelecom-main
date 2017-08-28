@@ -249,4 +249,34 @@ $(document).ready(function() {
             dropdownCssClass: "no-borders-dropdown"
         });
     });
+
+
+    $('.vertical-dropdown').select2({
+        minimumResultsForSearch: Infinity
+    }).on("select2:open", function() {
+        $('.select2-results__options').niceScroll({
+            cursorcolor: "#666666",
+            autohidemode: false,
+            background: "rgba(0,0,0,0.2)",
+            cursorwidth: "4px",
+            cursorborder: "0",
+            cursorborderradius: "1px",
+            railoffset: 10,
+            dropdownCssClass: "no-borders-dropdown"
+        });
+    });
+    $('.sample-dropdown-select').select2({
+        minimumResultsForSearch: Infinity
+    }).on("select2:open", function() {
+        $('.select2-results__options').niceScroll({
+            cursorcolor: "#666666",
+            autohidemode: false,
+            background: "rgba(0,0,0,0.2)",
+            cursorwidth: "4px",
+            cursorborder: "0",
+            cursorborderradius: "1px",
+            railoffset: 10,
+            dropdownCssClass: "no-borders-dropdown"
+        });
+    });        
 });

@@ -4999,3 +4999,324 @@ font-weight:100;        font-size: 7.33300vw;
     max-width:70%;
     margin-bottom:4.4vw;
 }
+
+.ui-kit .headers {
+    padding:0% 6%;
+}
+
+.ui-kit .headers .content {
+    padding:4.68750vw 0vw;
+    border-top:1px solid #d2d2d2;
+    border-bottom:1px solid #d2d2d2;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.ui-kit .headers .content h1 {
+    font-size:2.60417vw;
+}
+
+.ui-kit .headers .content h2 {
+    font-size:2.29167vw;
+}
+
+.ui-kit .headers .content h3 {
+    font-size:2.08333vw;
+}
+
+.ui-kit .headers .content h4 {
+    font-size:1.92708vw;
+}
+
+.ui-kit .headers .content h5 {
+    font-size:1.45833vw;
+}
+
+.ui-kit .headers .content p {
+    font-size:1.25000vw;
+}
+
+.ui-kit .headers .content p.gray {
+    color:#606060;
+}
+
+.ui-kit .headers .content .column1 {
+    width:30vw;
+}
+
+.ui-kit .headers .content .column2 {
+    width:30vw;
+}
+
+.ui-kit .headers .content > div > * {
+    margin-top:1.2vw;
+    margin-bottom:1.2vw;
+}
+
+.ui-kit .buttons-and-links {
+    padding:0% 6%;
+}
+
+.ui-kit .buttons-and-links .content {
+    padding:4.68750vw 0vw;
+        border-bottom:1px solid #d2d2d2;
+}
+
+.ui-kit .buttons-and-links .content .row {
+    display:flex;
+    justify-content: space-between;
+}
+
+.ui-kit .buttons-and-links .content .row {
+    font-size:1.25000vw;
+}
+
+.ui-kit .buttons-and-links .content .row .left a {
+    color:#0072ce;
+
+}
+
+.ui-kit .buttons-and-links .content .row a.popup-link {
+        border-bottom: 1px dotted #0072ce;
+    text-decoration: none;
+}
+
+.ui-kit .buttons-and-links .content .row .button {
+    width:13.90625vw;
+    border:none;
+}
+
+.ui-kit .buttons-and-links .content .row .right {
+    display:flex;
+}
+
+.ui-kit .buttons-and-links .content .row .button.current-tab {
+    background:#0072ce;
+    color:#ffffff;
+}
+
+.ui-kit .buttons-and-links .content .row .button.active-tab {
+    background:#ffffff;
+    color:#1c1c1c;
+    box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
+}
+
+.ui-kit .buttons-and-links .content .black-links {
+    margin-top:5vw;
+    font-size:1.03906vw;
+    margin-bottom:2vw;
+}
+
+.ui-kit .buttons-and-links .content .black-links a {
+
+margin-right:3vw;
+
+}
+
+.ui-kit .buttons-and-links .content .black-links a.active {
+    font-family:'Gilroy SemiBold';
+    color:#1c1c1c;
+
+}
+
+.ui-kit .buttons-and-links .content .buttons-row {
+    display:flex;
+    margin-bottom:2vw;
+
+}
+
+.ui-kit .buttons-and-links .content .buttons-row .button {
+    width:12.50000vw;
+    margin-right:1vw;
+}
+
+.ui-kit .buttons-and-links .content .buttons-row .button1 {
+    border:none;
+    color:#ffffff;
+    background:#0072ce;
+}
+
+.ui-kit .buttons-and-links .content .buttons-row .button1-hover {
+    background:#1980d3;
+    color:#ffffff;
+    border:none;
+}
+
+.ui-kit .buttons-and-links .content .buttons-row .button2 {
+    border:1px solid #0072ce;
+    color:#0072ce;
+}
+
+.ui-kit .buttons-and-links .content .buttons-row .button2-hover {
+    border:1px solid #1980d3;
+    color:#1980d3;
+}
+
+.ui-kit .buttons-and-links .content .buttons-row .button3 {
+    border:1px solid #1c1c1c;
+    color:#1c1c1c;
+}
+
+.ui-kit .buttons-and-links .content .buttons-row .button3-hover {
+    border:1px solid #606060;
+    color:#606060;
+}
+
+.ui-kit .separators {
+    padding:0% 6%;
+}
+
+.ui-kit .separators .content {
+    padding:4.68750vw 0vw;
+}
+
+.ui-kit .separators .content h2 {
+    font-size:2.29167vw;
+    margin-bottom:5vw;
+}
+
+.ui-kit .separators .content .horizontal {
+    display:flex;
+    align-items:center;
+    font-size:1.25000vw;
+    margin-bottom:5vw;
+}
+
+.ui-kit .separators .content .horizontal .separator {
+    height:1px;
+    background:#d2d2d2;
+    width:36.09375vw;
+    margin-right:2.39583vw;
+
+}
+
+.ui-kit .separators .content .vertical-description {
+
+    text-align:center;
+
+}
+
+.ui-kit .separators .content .vertical {
+    display:flex;
+    justify-content: space-between;
+    margin-top:5vw;
+    margin-bottom:5vw;
+}
+
+.ui-kit .separators .content .vertical > div {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:15.10417vw;
+    width:33%;
+}
+
+.ui-kit .separators .content .vertical > div:nth-of-type(2) {
+    border-left:1px solid #d2d2d2;
+    border-right:1px solid #d2d2d2;
+}
+
+.ui-kit .selectors {
+    padding:0% 6%;
+}
+.ui-kit .selectors .content {
+    padding:4.68750vw 0vw;
+     border-bottom:1px solid #d2d2d2;
+}
+
+.ui-kit .selectors .content .district {
+    cursor:pointer;
+    margin-bottom:2vw;
+}
+
+.ui-kit .selectors .vertical-dropdown + .select2-container--default .select2-selection--single {
+    border: none;
+}
+
+.ui-kit .selectors .vertical-dropdown +.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left:0;
+}
+
+.ui-kit .selectors .content {
+    display:flex;
+}
+
+.ui-kit .selectors .content > div {
+    margin-right:20%;
+}
+
+.ui-kit .tiles {
+    padding:0% 6%;
+
+}
+
+.ui-kit .tiles .content {
+    padding:4.68750vw 0vw;
+}
+
+.ui-kit .tiles .content .tile {
+    width:100%;
+    height:12.65625vw;
+    font-size:2.29167vw;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    box-shadow: 0px 0px 17.4px 2.6px rgba(51, 51, 51, 0.07);
+    background:#ffffff;
+    margin-bottom:2.76042vw;
+}
+
+.ui-kit .tiles .content .tile.colored {
+    background:#0072ce;
+    color:#ffffff;
+
+}
+
+.ui-kit .tiles .content .row {
+    display:flex;
+    align-items:center;
+}
+
+.ui-kit .tiles .popup {
+    width:auto;
+    height:auto;
+    margin-right:5vw;
+}
+
+.ui-kit .row-lists {
+    margin-top:5vw;
+    display:flex;
+}
+
+.ui-kit .row-lists a {
+    color:#0072ce;
+}
+
+.ui-kit .row-lists p.title {
+    margin-bottom:2vw;
+}
+.ui-kit .row-lists .link-container {
+    margin-bottom:1vw;
+}
+
+.ui-kit .row-lists .column {
+    margin-right:10vw;
+}
+
+.ui-kit .row-lists .column .instruction-row {
+    width:36.45833vw;
+    font-size:1.25000vw;
+    margin-bottom:2vw;
+}
+
+.ui-kit .row-lists .column .instruction-row img {
+    float:left;
+    margin-right:1.56250vw;
+    width:2.91667vw;
+}
+
+.ui-kit .row-lists .column .instruction-row .instruction-title {
+    color:#0072ce;
+    margin-bottom:0.5vw;
+}
